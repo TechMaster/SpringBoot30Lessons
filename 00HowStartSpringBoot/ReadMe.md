@@ -12,9 +12,18 @@ Hướng dẫn [Làm thế nào để dùng nhiều phiên bản JDK trên một
 
 1. Cài đặt [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
 2. Cài đặt [Spring Initializr Java Support](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-spring-initializr)
+
+![](Java_Extension_Pack.jpg)
    
 ## 3. Cài đặt Apache Maven
 Maven là công cụ quản lý các thư viện cho ứng dụng Spring Boot
 [Apache Maven](https://maven.apache.org/)
 
 Xem video [Spring Boot #1: Quản lý project Java với Maven thần thánh](https://www.youtube.com/watch?v=9oJct_kCMkU)
+
+Sau đó mở Terminal (Linux, Mac) hoặc Powersell (trong Windows) gõ lệnh
+```
+mvn -version
+```
+Kết quả tương tự như hình dưới
+![](mvn_version.jpg)
