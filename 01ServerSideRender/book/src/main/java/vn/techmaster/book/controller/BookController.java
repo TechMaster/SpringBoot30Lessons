@@ -1,7 +1,5 @@
 package vn.techmaster.book.controller;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
@@ -15,7 +13,8 @@ import vn.techmaster.book.model.Book;
 @RequestMapping(value ="/")
 public class BookController {
   @GetMapping("/")
-  public String showHomePage() {
+  public String showHomePage(Model model) {
+    model.addAttribute("name", "Jeff Bezos");
     return "index";
   }
   @GetMapping("/books")
