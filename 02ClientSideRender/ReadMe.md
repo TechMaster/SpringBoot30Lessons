@@ -92,7 +92,7 @@ Template trong Vue tương tự như template trong Thymeleaf
 ```html
 <ul id="array-rendering">
   <li v-for="(book, index) in books" :key="index" :book="book">
-    {{ book.title }}
+    {{ book.title + book.author }}
   </li>
 </ul>
 ```
@@ -104,7 +104,9 @@ với thymeleaf là
 </ul>
 ```
 
+Bài tập tại lớp:
 
+Hãy bổ xung book.author vào Vue 3. Google Vue string concatnate
 ## Hỏi và đáp
 
 Hỏi: Lập trình Client Side Rendering có làm ứng dụng đẹp hơn?
@@ -176,3 +178,18 @@ Hỏi: thầy có đảm bảo việc làm cho chúng em không?
 Đáp: Techmaster chỉ cam kết việc làm khi bạn hoàn thành các bài tập lập trình và bảo vệ thành công đồ án tốt nghiệp.
 
 Bạn không chủ động giúp chính bạn, chúng tôi sao giúp được bạn.
+
+
+# Bài tập tại lớp.
+
+Hãy chuyển đổi từ Book thành Film để làm quen một chút với Vuejs3
+
+```
+.
+├── assets
+│   └── logo.png
+├── components
+│   └── BookList.vue  --> FilmList.vue
+├── App.vue
+└── main.js
+```
