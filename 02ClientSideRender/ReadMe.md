@@ -53,6 +53,57 @@ Cấu trúc ứng dụng Client Side để bạn dễ hình dung.
 ├── App.vue
 └── main.js
 ```
+### Tìm hiểu kỹ hơn về Vue.js
+
+1. Chúng ta dùng Node.js làm web server phục vụ Vue.js static files
+2. Node.js có thể thay thế bằng Web server khác như Golang, Python, Java.... tuy nhiên cho mục đích phát triển, kiểm thử Node.js vẫn là tốt nhất vì nó hot reload
+3. Node.js không nối vào REST API của Spring Boot. Thực tế Vue app nối vào REST API của Spring Boot
+
+```js
+methods: {    
+  async fetchBooks() {
+    try {
+      this.error = null
+      this.loading = true
+      const url = `http://localhost:8080/api/books`
+      const response = await axios.get(url)       
+      this.books = response.data
+    } catch (err) {       
+      console.log(err)
+    }
+    this.loading = false
+  },
+},
+```
+
+Node.js có trình NPM (Nodes Package Management) cũng giống như Maven và Gradle trong Java.
+
+File package.json tương đương file pom.xml của Maven.
+
+`async fetchBooks()` trong JavaScript có nghĩa là đây là hàm non-blocking, nó có thể chạy dài hay ngắn nhưng sẽ không block thread chính của ứng dụng
+
+`await axios.get(url)` chờ cho đến server trả về dữ liệu.
+
+Điều thú vị await lại là blocking. Có nghĩa phải chờ cho đến khi kết quả trả về. Nhưng lệnh này nằm trong hàm `async` nên nó không ảnh hưởng đến các tác vụ khác.
+
+Vue 3 chia ứng dụng thành các component. Trong mỗi compnent sẽ có template và logic. Component có thể chứa component.
+
+Template trong Vue tương tự như template trong Thymeleaf
+```html
+<ul id="array-rendering">
+  <li v-for="(book, index) in books" :key="index" :book="book">
+    {{ book.title }}
+  </li>
+</ul>
+```
+
+với thymeleaf là
+```html
+<ul th:each="book : ${books}">
+  <li th:text="|&quot;${book.title}&quot; : &quot;${book.author}&quot;|"></li>
+</ul>
+```
+
 
 ## Hỏi và đáp
 

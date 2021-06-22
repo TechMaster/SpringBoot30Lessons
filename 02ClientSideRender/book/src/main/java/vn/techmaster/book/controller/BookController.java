@@ -19,7 +19,7 @@ public class BookController {
   @GetMapping("/books")
   public String listBooks(Model model) {
     List<Book> books = List.of(
-      new Book("Dế Mèn Phiêu Lưu Ký", "Tô Hoài"),
+      new Book("Dế Mèn Phiêu Lưu Ký tập 2", "Tô Hoài"),
       new Book("Nhật Ký Trong Tù", "Hồ Chí Minh"),
       new Book("Tắt Đèn", "Ngô Tất Tố")
     );
