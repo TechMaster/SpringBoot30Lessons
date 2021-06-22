@@ -1,4 +1,4 @@
-package vn.techmaster.book.controller;
+package vn.techmaster.bookstore.controller;
 
 import java.util.List;
 
@@ -7,28 +7,32 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import vn.techmaster.book.model.Book;
+import vn.techmaster.bookstore.model.Book;
 
 @Controller
-@RequestMapping(value ="/")
-public class BookController {
-  @GetMapping("/")
+@RequestMapping("/")
+public class HomeController {
+  @GetMapping()
   public String showHomePage(Model model) {
-    model.addAttribute("name", "Jeff Bezos");
+    model.addAttribute("name", "Bill Gates");
     return "index";
   }
-  @GetMapping("/books")
-  public String listBooks(Model model) {
+
+  @GetMapping("about")
+  public String showAboutPage(Model model) {
+    model.addAttribute("name", "Bill Gates");
+    return "about";
+  }
+
+  @GetMapping("books")
+  public String listBook(Model model) {
     List<Book> books = List.of(
       new Book("Dế Mèn Phiêu Lưu Ký", "Tô Hoài"),
       new Book("Nhật Ký Trong Tù", "Hồ Chí Minh"),
       new Book("Tắt Đèn", "Ngô Tất Tố"),
-      new Book("Ma Thổi Đèn", "Phạm Hữu Tín"),
-      new Book("Đắc Nhân Tâm", "Dale Carnege")
+      new Book("Cọp Trắng", "Khan")
     );
     model.addAttribute("books", books);
     return "book";
   }
 }
-
-
