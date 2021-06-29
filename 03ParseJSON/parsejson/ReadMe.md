@@ -34,3 +34,6 @@ Bổ xung jackson-databind vào [pom.xml](pom.xml)
 ```
 
 Gõ lệnh `spring boot read file from resources` để tìm cách đọc file từ resources
+
+
+Để trình duyệt xem được JSON trả về hãy cài JsonViewer extension
