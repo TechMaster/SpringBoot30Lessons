@@ -19,8 +19,12 @@ public class DemoList {
   public static void demoArrayList1() {
     ArrayList<String> manNames = new ArrayList<>(List.of("Thắng", "Dũng", "Trung", "Đức", "Cường"));
     //Dùng vòng lặp for duyệt collection
-    for (String manName : manNames) {
+    /*for (String manName : manNames) {
       System.out.println(manName);
+    }*/
+
+    for (int i = manNames.size() - 1; i > 0; i--) {
+      System.out.println(manNames.get(i));
     }
   }
   public static void demoArrayList2() {
@@ -139,7 +143,7 @@ public class DemoList {
     );
     /*var result = people.stream().sorted(Comparator.comparing(Person::getName)).collect(Collectors.toList());
     result.stream().forEach(System.out::println);*/
-    people.stream().sorted(Comparator.comparing(Person::getName)).forEach(System.out::println);
+    people.stream().sorted(Comparator.comparing(Person::getNationality)).forEach(System.out::println);
   }
 
 
