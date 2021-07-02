@@ -4,6 +4,8 @@ public class App {
     DemoStream.map02();
     DemoStream.map03();*/
     //DemoStream.filter01();
-    DemoStream.maxBy();
+    //DemoStream.maxBy();
+    //DemoStream.groupBy01();
+    DemoStream.distinct();
   }
 }
