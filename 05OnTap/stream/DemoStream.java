@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -26,7 +25,8 @@ public class DemoStream {
     ));
 
   public static void map01() {
-    ArrayList<String> manNames = new ArrayList<>(List.of("Thắng", "Dũng", "Trung", "Đức", "Cường"));    
+    ArrayList<String> manNames = 
+    new ArrayList<>(List.of("Thắng", "Dũng", "Trung", "Đức", "Cường"));    
     
     var result = manNames
     .stream()
@@ -53,16 +53,28 @@ public class DemoStream {
     manNames
     .stream()
     .map(String::toUpperCase)
+    .map(String::toLowerCase)
     .forEach(System.out::println);
   }
 
   public static void filter01() {
     ArrayList<Integer> manNames = new ArrayList<>(List.of(1, 3, 2, 4, 5, 6, 9, 2));    
     
-    manNames
+    ArrayList<Integer> mangSoChan = new ArrayList<>();
+
+    for (Integer e:manNames) {
+      if (e % 2 == 0) {
+        mangSoChan.add(e);
+      }
+    }
+
+    var mangSoChan2 = manNames.stream().filter(p -> p % 2 == 0).collect(Collectors.toList());
+
+
+   /* manNames
     .stream()
     .filter(p -> p % 2 == 0)  //Lọc chỉ lấy số chẵn
-    .forEach(System.out::println);
+    .forEach(System.out::println);*/
   }
 
   public static void reduce01() {
@@ -70,7 +82,7 @@ public class DemoStream {
     
     Integer result = manNames
     .stream()
-    .reduce(0, (a, b) -> a + b); //gập các phần tử lại để tính tổng
+    .reduce(1, (a, b) -> a * b); //gập các phần tử lại để tính tổng
 
     System.out.println(result);
   }
