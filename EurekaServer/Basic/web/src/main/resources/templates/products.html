@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+
+<body>
+    <img src="diagram.jpg" alt="biểu đồ mô hình hệ thống">
+    <h1>Calling REST API with named "shop"</h1>
+    <ul th:each="product : ${products}">
+        <li th:text="|&quot;${product.name}&quot; : &quot;${product.price}&quot;|"></li>
+    </ul>
+</body>
+
+</html>
