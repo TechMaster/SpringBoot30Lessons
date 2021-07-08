@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{welcome}"></title>
+</head>
+
+<body>
+    <a th:text="#{home}" href="/">Home</a><br><br>
+    <span th:text="#{hello}"></span>!<br>
+    <span th:text="#{welcome}"></span><br><br>
+    <button type="button" th:text="#{switch-en}" onclick="window.location.href='/hello?lang=en'"></button>
+    <button type="button" th:text="#{switch-it}" onclick="window.location.href='/hello?lang=it'"></button>
+    <button type="button" th:text="#{switch-vn}" onclick="window.location.href='/hello?lang=vn'"></button>
+</body>
+
+</html>

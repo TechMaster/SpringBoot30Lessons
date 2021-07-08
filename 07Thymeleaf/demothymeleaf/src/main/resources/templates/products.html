@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="template.html :: header">
+</head>
+<body>
+  <header th:insert="template.html :: topmenu"> </header>
+  <div class="container">
+    <p>
+      Products
+    </p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Manufacturer</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="product, iStat:${products}">
+          <th scope="row" th:text="${iStat.index} +1"></th>
+          <td th:text="${product.name}"></td>
+          <td th:text="${product.manufacturer}">Otto</td>
+          <td th:text="${product.price}">@mdo</td>
+        </tr>
+       
+      </tbody>
+    </table>
+  </div>  
+  <header th:replace="template.html :: footer"> </header>
+</body>
+</html>

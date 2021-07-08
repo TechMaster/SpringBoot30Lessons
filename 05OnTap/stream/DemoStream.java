@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -194,9 +195,52 @@ public class DemoStream {
 
   //Lọc người từ độ tuổi X -> Y
 
+  public static void filterAge(int x, int y) {
+    people
+    .stream()
+    .filter(p -> p.getAge() >= x && p.getAge() <= y)
+    .forEach(System.out::println);
+  }
+
   //Tuổi trung bình
+  public static int averageAge2(){
+    Integer result = people.stream()
+    .mapToInt(a -> a.getAge())
+    .reduce(0, (a, b) -> a + b);
+
+    return result / people.size();
+}
 
   //Tuổi trung bình theo từng quốc tịch
+  //Bài của anh Nguyễn Thọ Duy
+  public static  void averageAgeByNationality() {
+    
+    //Kiểu là Set nhưng tên biến lại là List
+    Set<String> nationalityList = people.stream()
+        .map(Person::getNationality)
+        .collect(Collectors.toSet());
 
+       for (String item : nationalityList) {
+           Integer result = 
+                      people.stream()
+                      .filter(p -> p.getNationality().equals(item))
+                      .mapToInt(s -> s.getAge())
+                      .reduce(0, (a, b) -> a + b);
+            System.out.println(item +  ": " + result/sumsPeopleByNationality(item));                            
+       }
+  }
+
+  public static int sumsPeopleByNationality(String nationality) {
+    return (int) people.stream()
+    .filter(p -> p.getNationality().equals(nationality))
+    .count();
+  }
+
+  public static void getAverageAgeByNation() {
+    Map<String, Double> result = people
+    .stream()
+    .collect(Collectors.groupingBy(Person::getNationality, Collectors.averagingInt(Person::getAge)));
+    System.out.println(result);
+  }
 
 }

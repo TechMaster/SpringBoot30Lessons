@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo List Box</title>
+</head>
+<body>
+  <label for="countries">Choose your home country:</label>
+
+  <select name="country" id="country">
+    <option th:each="country:${countries}" th:text="${country.name}" th:value="${country.code}">Volvo</option>
+  </select>
+  <br>
+  <br>
+  <label for="destination">Tick countries you have visited</label><br>
+  <span th:each="country:${countries}">    
+    <input type="checkbox" name="destination" th:value="${country.code}">
+    <label  th:text="${country.name}" for="destination"></label><br>
+  </span>
+</body>
+</html>
