@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head th:replace="template.html :: header">
+  </head>
+<body>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="user, iStat:${users}">
+        <th scope="row" th:text="${iStat.index} +1"></th>
+        <td th:text="${user.name}">Long</td>
+        <td th:switch="${user.role}">
+          <span th:case="admin">Quản lý hệ thống</span>
+          <span th:case="editor">Duyệt bài</span>
+          <span th:case="author">Tác giả</span>
+          <span th:case="user">Người dùng</span>
+        </td>      
+      </tr>     
+    </tbody>
+  </table>
+</body>
+</html>
