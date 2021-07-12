@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo th:block</title>
+</head>
+
+<body>
+  <h1>Demo th:block</h1>
+  <ul>
+    <th:block th:each="travel_type : ${travelTypes}" th:switch="${travel_type.value}">
+      <li th:case="Premium">
+        <span th:text="${travel_type.value}">Premium</span>
+        <input type="checkbox" name="Premium" th:value="jet"><label>Private Jet</label>
+        <input type="checkbox" name="Premium" th:value="champaign"><label>Champaign</label>
+      </li>
+      <li th:case="Luxury">
+        <span th:text="${travel_type.value}">Luxury</span>
+        <input type="checkbox" name="Luxury" th:value="swimmingpool"><label>Swimming Pool</label>
+        <input type="checkbox" name="Luxury" th:value="taxi"><label>Airport taxi</label>
+      </li>
+      <li th:case="*">
+        <span th:text="${travel_type.value}">Other</span>
+      </li>
+    </th:block>
+  </ul>
+</body>
+
+</html>

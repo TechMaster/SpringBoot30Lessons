@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import vn.techmaster.demothymeleaf.model.Person;
+import vn.techmaster.demothymeleaf.model.TravelType;
 import vn.techmaster.demothymeleaf.repository.InMemoryRepository;
 
 @Controller
@@ -63,6 +64,14 @@ public class HomeController {
     model.addAttribute("users", repo.getUsers());
     return "switch";
   }
+
+  @GetMapping("/thblock")
+  public String demoThBlock(Model model) {
+    model.addAttribute("travelTypes", TravelType.values());
+    return "thblock";
+  }
+
+
 
   
 }
