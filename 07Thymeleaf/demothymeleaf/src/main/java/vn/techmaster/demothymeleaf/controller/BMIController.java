@@ -50,6 +50,7 @@ public class BMIController {
 
       //Trả về 2 đối tượng để Thymeleaf render ra HTML
       model.addAttribute("bmiRequest", request); 
+      //model.addAttribute("bmiRequest", new BMIRequest()); 
       model.addAttribute("bmiResult", bmiResult);
     }
     return "bmi"; // Sử dụng template bmi.html trong thư mục resources/templates/bmi.html

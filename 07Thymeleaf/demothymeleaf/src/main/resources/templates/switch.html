@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head th:replace="template.html :: header">
+  <head th:replace="template.html :: header('switch')">
   </head>
 <body>
   <table class="table">
@@ -9,12 +9,14 @@
         <th scope="col">#</th>
         <th scope="col">Name</th>
         <th scope="col">Role</th>
+        <th scope="col">Role explain</th>
       </tr>
     </thead>
     <tbody>
       <tr th:each="user, iStat:${users}">
         <th scope="row" th:text="${iStat.index} +1"></th>
         <td th:text="${user.name}">Long</td>
+        <td th:text="${user.role}">admin</td>
         <td th:switch="${user.role}">
           <span th:case="admin">Quản lý hệ thống</span>
           <span th:case="editor">Duyệt bài</span>

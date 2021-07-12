@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo List Box</title>
+</head>
+
+<body>
+  <form action="#" th:action="@{/travel}" th:object="${travelRequest}" method="post">
+  <label for="countries">Nationality</label>
+  <select name="nationality" id="nationality">
+    <option 
+    th:each="country:${countries}" 
+    th:text="${country.name}" 
+    th:value="${country.code}" 
+    th:selected="${travelRequest.nationality==country.code}">China</option>
+  </select>
+  <br>
+  <br>
+  <label for="visitedCountries">Tick countries you have visited</label><br>
+  <span th:each="country:${countries}">
+    <input type="checkbox" name="visitedCountries" 
+    th:value="${country.code}" 
+    th:checked="${#lists.contains(travelRequest.visitedCountries, country.code)}">
+    <label th:text="${country.name}" for="visitedCountries"></label><br>
+  </span>
+  <br>
+  <label for="travelType">Choose one travel type</label><br>
+  <span th:each="travel_type:${travelTypes}">
+    <input type="radio" name="travelType" 
+    th:value="${travel_type}" 
+    th:checked="${travelRequest.travelType.value==travel_type.value}">
+    <label th:text="${travel_type.value}" for="travelType"></label><br>
+  </span>
+
+  <button type="submit">Submit form</button>
+  </form>
+
+  <div th:if="${travelRequest.nationality != null}">
+    <h3>Submitted result</h3>
+    <p th:text="${travelRequest}"></p>
+  </div>
+</body>
+
+</html>

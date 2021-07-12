@@ -17,6 +17,20 @@ public class HomeController {
     return "index";
   }
 
+  @GetMapping("/text")
+  public String demoText(Model model) {
+    Person tom = new Person("Tom", "USA", "1976-12-01", "male");
+    model.addAttribute("person", tom);
+    model.addAttribute("message", "<h2>Display <span style='color:red'>HTML</span> inside</h2>");
+    return "text";
+  }
+
+  @GetMapping("/link")
+  public String linkExpression(Model model) {
+    model.addAttribute("dynamiclink", "products");
+    return "link";
+  }
+
   @GetMapping("/hello")
   public String showHello() {
     return "hello";
@@ -33,22 +47,9 @@ public class HomeController {
     return "products";
   }
 
-  @GetMapping("/listbox")
-  public String showListBox(Model model) {
-    model.addAttribute("countries", repo.getCountries());
-    return "listbox";
-  }
-
   @GetMapping("/services")
   public String getService() {
     return "services";
-  }
-
-  @GetMapping("/text")
-  public String demoText(Model model) {
-    Person tom = new Person("Tom", "USA", "1976-12-01", "male");
-    model.addAttribute("person", tom);
-    return "text";
   }
 
   @GetMapping("/condition")

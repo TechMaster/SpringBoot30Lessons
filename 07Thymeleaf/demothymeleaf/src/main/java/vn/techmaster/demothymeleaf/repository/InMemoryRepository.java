@@ -51,7 +51,7 @@ public class InMemoryRepository {
       new User("Lan", "author"),
       new User("Long", "user"),
       new User("Joe", "user")
-    ));
+    ));   
   }
 
   public List<Product> getProducts() {
