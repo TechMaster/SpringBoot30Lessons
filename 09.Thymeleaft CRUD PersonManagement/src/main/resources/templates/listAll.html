@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="home::Heading"></head>
+<body>
+    <div class="container">
+        <div class="row">
+            <a th:href="@{/}" class="col-sm-2">Back</a>
+            <h3 class="col-sm-6">List of people</h3>
+        </div>
+
+        <div class="row my-3">
+            <form th:action="@{/search}" method="get">
+                <div class="col-6 d-flex">
+                    <button type="submit" class="btn btn-primary mx-3">Search</button>
+                    <input type="text" placeholder="type keyword here" name="name"/><br><br>
+                </div>
+            </form>
+        </div>
+        <table class="table">
+            <thead>
+                <th>Name</th>
+                <th>Job</th>
+                <th>Gender</th>
+                <th>Birthdate</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <tr th:each="person,iter:${people}">
+                    <td th:text="${person.name}"></td>
+                    <td th:text="${person.job}"></td>
+                    <td th:if="${person.gender}">Male</td>
+                    <td th:unless="${person.gender}">Fermale</td>
+                    <td th:text="${person.birthDay}"></td>
+                    <td>
+                        <span>
+                            <a th:href="@{/person/edit/{id}(id=${person.id})}">Edit</a>
+                        </span>&nbsp; &nbsp;
+                        <span>
+                            <a th:href="@{/person/delete/{id}(id=${person.id})}">Delete</a>
+                        </span>
+                    </td>    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
