@@ -5,9 +5,16 @@
     Hompage:
         ![image](https://user-images.githubusercontent.com/70272965/126032680-2068a92d-b024-44c7-94aa-1173562c377c.png)
 
+    
+    
+    
     People Listt:
         ![image](https://user-images.githubusercontent.com/70272965/126032701-9fa41316-1f07-4e56-90ca-1e992300edcd.png)
 
+    
+    
+    
+    
     Create From:
         ![image](https://user-images.githubusercontent.com/70272965/126032720-1e9eff61-ac90-4ae0-b2ca-a07f32ce40e7.png)
 
