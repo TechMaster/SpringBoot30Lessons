@@ -4,7 +4,8 @@
 2. Chạy chương trình:
     Hompage:
     
-        ![image](https://user-images.githubusercontent.com/70272965/126032680-2068a92d-b024-44c7-94aa-1173562c377c.png)
+        ![image](https://user-images.githubusercontent.com/70272965/126032773-e9ee8052-7cbb-45a6-abb5-f042bc078b76.png)
+
 
     
     
@@ -18,7 +19,8 @@
    
    People Listt:
    
-        ![image](https://user-images.githubusercontent.com/70272965/126032701-9fa41316-1f07-4e56-90ca-1e992300edcd.png)
+        ![image](https://user-images.githubusercontent.com/70272965/126032782-8b1b5efb-b277-4517-8915-a433807248fd.png)
+
 
     
     
@@ -28,7 +30,7 @@
    
    Create From:
    
-        ![image](https://user-images.githubusercontent.com/70272965/126032720-1e9eff61-ac90-4ae0-b2ca-a07f32ce40e7.png)
+        ![image](https://user-images.githubusercontent.com/70272965/126032786-f531f146-897a-478e-b839-ec35f3b92d25.png)
 
 
 
