@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head th:replace="template.html :: header('Upload file')">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">Demo Upload File</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mt-5">
+        <form action="#" th:action="@{/}" method="post" name="person" enctype="multipart/form-data"
+          th:object="${person}">
+          <div class="form-group row">
+            <label for="name" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="name" autocomplete="off" th:field="*{name}"/>
+            </div>
+            <div class="text-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</div>
+          </div>
+          <div class="form-group row mt-3">
+            <label for="email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="email" autocomplete="off" th:field="*{email}"/>
+            </div>
+            <div class="text-danger" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</div>
+          </div>
+          <div class="form-group row mt-3">
+            <label for="email" class="col-sm-2 col-form-label">Select a photo</label>
+            <div class="col-sm-4">
+              <input type="file" class="form-control"th:field="*{photo}" />
+            </div>
+            <div class="text-danger"  th:if="${#fields.hasErrors('photo')}" th:errors="*{photo}">Upload Error</div>
+          </div>          
+          <button class="btn btn-primary mt-3" type="submit">Submit form</button>
+        </form>
+      </div>
+    </div>
+</body>
+
+</html>

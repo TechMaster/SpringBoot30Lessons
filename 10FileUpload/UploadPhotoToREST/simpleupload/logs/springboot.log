@@ -1,0 +1,566 @@
+[DEBUG] 2021-04-26 22:45:26.797 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 22:45:26.853 [restartedMain] RequestMappingHandlerMapping - 4 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-26 22:45:26.877 [restartedMain] WebMvcConfigurer - Default resource handling disabled
+[DEBUG] 2021-04-26 22:45:26.886 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-26 22:46:12.228 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 22:46:12.228 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-26 22:46:12.228 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-26 22:46:12.228 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-26 22:46:12.229 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@24b68587
+[DEBUG] 2021-04-26 22:46:12.230 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6f58fd70
+[DEBUG] 2021-04-26 22:46:12.231 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-26 22:46:12.231 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 3 ms
+[DEBUG] 2021-04-26 22:46:12.250 [http-nio-8080-exec-1] DispatcherServlet - POST "/upload2", parameters={masked}
+[DEBUG] 2021-04-26 22:46:12.256 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload2(PhotoRequest)
+[DEBUG] 2021-04-26 22:46:12.322 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:46:12.323 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing ["Upload success2"]
+[DEBUG] 2021-04-26 22:46:12.330 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 22:46:56.027 [http-nio-8080-exec-8] DispatcherServlet - GET "/favicon.ico", parameters={}
+[WARN ] 2021-04-26 22:46:56.030 [http-nio-8080-exec-8] PageNotFound - No mapping for GET /favicon.ico
+[DEBUG] 2021-04-26 22:46:56.033 [http-nio-8080-exec-8] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[DEBUG] 2021-04-26 22:46:56.058 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:46:56.058 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@69fee379]
+[WARN ] 2021-04-26 22:46:56.080 [http-nio-8080-exec-8] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /favicon.ico]
+[DEBUG] 2021-04-26 22:46:56.080 [http-nio-8080-exec-8] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-26 22:46:58.878 [http-nio-8080-exec-1] DispatcherServlet - GET "/favicon.ico", parameters={}
+[WARN ] 2021-04-26 22:46:58.879 [http-nio-8080-exec-1] PageNotFound - No mapping for GET /favicon.ico
+[DEBUG] 2021-04-26 22:46:58.880 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[DEBUG] 2021-04-26 22:46:58.881 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:46:58.882 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@51900d43]
+[WARN ] 2021-04-26 22:46:58.883 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /favicon.ico]
+[DEBUG] 2021-04-26 22:46:58.884 [http-nio-8080-exec-1] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-26 22:51:15.572 [http-nio-8080-exec-5] DispatcherServlet - POST "/upload2", parameters={masked}
+[DEBUG] 2021-04-26 22:51:15.573 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload2(PhotoRequest)
+[DEBUG] 2021-04-26 22:51:15.575 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:51:15.575 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing ["Upload success2"]
+[DEBUG] 2021-04-26 22:51:15.576 [http-nio-8080-exec-5] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 22:51:16.753 [http-nio-8080-exec-10] DispatcherServlet - POST "/upload2", parameters={masked}
+[DEBUG] 2021-04-26 22:51:16.754 [http-nio-8080-exec-10] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload2(PhotoRequest)
+[DEBUG] 2021-04-26 22:51:16.756 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:51:16.756 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Writing ["Upload success2"]
+[DEBUG] 2021-04-26 22:51:16.757 [http-nio-8080-exec-10] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 22:51:21.134 [http-nio-8080-exec-4] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-26 22:51:21.135 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest)
+[DEBUG] 2021-04-26 22:51:38.632 [http-nio-8080-exec-4] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleBookStoreException(RESTException, WebRequest)
+[DEBUG] 2021-04-26 22:51:42.078 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:51:42.079 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@202d7c0]
+[WARN ] 2021-04-26 22:51:42.081 [http-nio-8080-exec-4] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.simpleupload.exception.RESTException: Failed to store file src/main/resources/static/photos/1_ngoan.jpg]
+[DEBUG] 2021-04-26 22:51:42.082 [http-nio-8080-exec-4] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-26 22:52:12.716 [http-nio-8080-exec-6] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-26 22:52:12.716 [http-nio-8080-exec-6] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest)
+[DEBUG] 2021-04-26 22:52:36.417 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:52:36.418 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Writing ["Upload success"]
+[DEBUG] 2021-04-26 22:52:36.419 [http-nio-8080-exec-6] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 22:52:57.035 [http-nio-8080-exec-10] DispatcherServlet - GET "/2_ngoan.jpg", parameters={}
+[WARN ] 2021-04-26 22:52:57.037 [http-nio-8080-exec-10] PageNotFound - No mapping for GET /2_ngoan.jpg
+[DEBUG] 2021-04-26 22:52:57.039 [http-nio-8080-exec-10] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[DEBUG] 2021-04-26 22:52:57.041 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:52:57.042 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@5f2a2bd1]
+[WARN ] 2021-04-26 22:52:57.043 [http-nio-8080-exec-10] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /2_ngoan.jpg]
+[DEBUG] 2021-04-26 22:52:57.044 [http-nio-8080-exec-10] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-26 22:52:57.259 [http-nio-8080-exec-4] DispatcherServlet - GET "/favicon.ico", parameters={}
+[WARN ] 2021-04-26 22:52:57.260 [http-nio-8080-exec-4] PageNotFound - No mapping for GET /favicon.ico
+[DEBUG] 2021-04-26 22:52:57.261 [http-nio-8080-exec-4] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[DEBUG] 2021-04-26 22:52:57.263 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:52:57.264 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@1572b8c2]
+[WARN ] 2021-04-26 22:52:57.265 [http-nio-8080-exec-4] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /favicon.ico]
+[DEBUG] 2021-04-26 22:52:57.266 [http-nio-8080-exec-4] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-26 22:53:04.806 [http-nio-8080-exec-2] DispatcherServlet - GET "/photos/2_ngoan.jpg", parameters={}
+[WARN ] 2021-04-26 22:53:04.807 [http-nio-8080-exec-2] PageNotFound - No mapping for GET /photos/2_ngoan.jpg
+[DEBUG] 2021-04-26 22:53:04.808 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[DEBUG] 2021-04-26 22:53:04.809 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:53:04.810 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@3f2f98bf]
+[WARN ] 2021-04-26 22:53:04.811 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /photos/2_ngoan.jpg]
+[DEBUG] 2021-04-26 22:53:04.812 [http-nio-8080-exec-2] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-26 22:53:04.844 [http-nio-8080-exec-8] DispatcherServlet - GET "/favicon.ico", parameters={}
+[WARN ] 2021-04-26 22:53:04.845 [http-nio-8080-exec-8] PageNotFound - No mapping for GET /favicon.ico
+[DEBUG] 2021-04-26 22:53:04.846 [http-nio-8080-exec-8] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[DEBUG] 2021-04-26 22:53:04.847 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:53:04.848 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@62a97af1]
+[WARN ] 2021-04-26 22:53:04.850 [http-nio-8080-exec-8] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /favicon.ico]
+[DEBUG] 2021-04-26 22:53:04.850 [http-nio-8080-exec-8] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-26 22:53:58.874 [http-nio-8080-exec-9] DispatcherServlet - GET "/2_ngoan.jpg", parameters={}
+[WARN ] 2021-04-26 22:53:58.874 [http-nio-8080-exec-9] PageNotFound - No mapping for GET /2_ngoan.jpg
+[DEBUG] 2021-04-26 22:53:58.875 [http-nio-8080-exec-9] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[DEBUG] 2021-04-26 22:53:58.876 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:53:58.877 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@11feb9d9]
+[WARN ] 2021-04-26 22:53:58.878 [http-nio-8080-exec-9] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /2_ngoan.jpg]
+[DEBUG] 2021-04-26 22:53:58.878 [http-nio-8080-exec-9] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-26 22:53:58.919 [http-nio-8080-exec-6] DispatcherServlet - GET "/favicon.ico", parameters={}
+[WARN ] 2021-04-26 22:53:58.920 [http-nio-8080-exec-6] PageNotFound - No mapping for GET /favicon.ico
+[DEBUG] 2021-04-26 22:53:58.921 [http-nio-8080-exec-6] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[DEBUG] 2021-04-26 22:53:58.923 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:53:58.923 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@6a8ebce2]
+[WARN ] 2021-04-26 22:53:58.925 [http-nio-8080-exec-6] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /favicon.ico]
+[DEBUG] 2021-04-26 22:53:58.925 [http-nio-8080-exec-6] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-26 22:54:13.764 [http-nio-8080-exec-3] DispatcherServlet - GET "/2_ngoan.jpg", parameters={}
+[WARN ] 2021-04-26 22:54:13.765 [http-nio-8080-exec-3] PageNotFound - No mapping for GET /2_ngoan.jpg
+[DEBUG] 2021-04-26 22:54:13.766 [http-nio-8080-exec-3] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[DEBUG] 2021-04-26 22:54:13.767 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:54:13.768 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@34aa5128]
+[WARN ] 2021-04-26 22:54:13.769 [http-nio-8080-exec-3] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /2_ngoan.jpg]
+[DEBUG] 2021-04-26 22:54:13.769 [http-nio-8080-exec-3] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-26 22:54:13.798 [http-nio-8080-exec-1] DispatcherServlet - GET "/favicon.ico", parameters={}
+[WARN ] 2021-04-26 22:54:13.799 [http-nio-8080-exec-1] PageNotFound - No mapping for GET /favicon.ico
+[DEBUG] 2021-04-26 22:54:13.800 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[DEBUG] 2021-04-26 22:54:13.802 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:54:13.802 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@417949b]
+[WARN ] 2021-04-26 22:54:13.804 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /favicon.ico]
+[DEBUG] 2021-04-26 22:54:13.804 [http-nio-8080-exec-1] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-26 22:54:25.801 [http-nio-8080-exec-5] DispatcherServlet - GET "/static/photos/2_ngoan.jpg", parameters={}
+[WARN ] 2021-04-26 22:54:25.802 [http-nio-8080-exec-5] PageNotFound - No mapping for GET /static/photos/2_ngoan.jpg
+[DEBUG] 2021-04-26 22:54:25.802 [http-nio-8080-exec-5] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[DEBUG] 2021-04-26 22:54:25.803 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:54:25.804 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@e860190]
+[WARN ] 2021-04-26 22:54:25.805 [http-nio-8080-exec-5] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /static/photos/2_ngoan.jpg]
+[DEBUG] 2021-04-26 22:54:25.805 [http-nio-8080-exec-5] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-26 22:54:25.837 [http-nio-8080-exec-10] DispatcherServlet - GET "/favicon.ico", parameters={}
+[WARN ] 2021-04-26 22:54:25.838 [http-nio-8080-exec-10] PageNotFound - No mapping for GET /favicon.ico
+[DEBUG] 2021-04-26 22:54:25.839 [http-nio-8080-exec-10] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[DEBUG] 2021-04-26 22:54:25.839 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:54:25.840 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@4c55d254]
+[WARN ] 2021-04-26 22:54:25.841 [http-nio-8080-exec-10] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /favicon.ico]
+[DEBUG] 2021-04-26 22:54:25.841 [http-nio-8080-exec-10] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-26 22:55:56.103 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 22:55:56.170 [restartedMain] RequestMappingHandlerMapping - 4 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-26 22:55:56.227 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-26 22:55:56.242 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-26 22:56:01.757 [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 22:56:01.758 [http-nio-8080-exec-2] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-26 22:56:01.758 [http-nio-8080-exec-2] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-26 22:56:01.758 [http-nio-8080-exec-2] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-26 22:56:01.760 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@a212f1e
+[DEBUG] 2021-04-26 22:56:01.761 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1a286839
+[DEBUG] 2021-04-26 22:56:01.761 [http-nio-8080-exec-2] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-26 22:56:01.762 [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 4 ms
+[DEBUG] 2021-04-26 22:56:01.785 [http-nio-8080-exec-2] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-26 22:56:01.793 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest)
+[DEBUG] 2021-04-26 22:56:04.397 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:56:04.398 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing ["Upload success"]
+[DEBUG] 2021-04-26 22:56:04.408 [http-nio-8080-exec-2] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 22:56:10.640 [http-nio-8080-exec-9] DispatcherServlet - GET "/favicon.ico", parameters={}
+[DEBUG] 2021-04-26 22:56:10.643 [http-nio-8080-exec-9] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 22:56:10.646 [http-nio-8080-exec-9] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-04-26 22:56:10.646 [http-nio-8080-exec-9] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-26 22:56:10.649 [http-nio-8080-exec-9] DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[DEBUG] 2021-04-26 22:56:10.651 [http-nio-8080-exec-9] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-04-26 22:56:10.660 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 22:56:10.662 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Writing [{timestamp=Mon Apr 26 22:56:10 ICT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+[DEBUG] 2021-04-26 22:56:10.705 [http-nio-8080-exec-9] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-04-26 22:56:21.603 [http-nio-8080-exec-2] DispatcherServlet - GET "/static/photos/1_ngoan.jpg", parameters={}
+[DEBUG] 2021-04-26 22:56:21.605 [http-nio-8080-exec-2] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 22:56:21.606 [http-nio-8080-exec-2] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-04-26 22:56:21.607 [http-nio-8080-exec-2] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-26 22:56:21.607 [http-nio-8080-exec-2] DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[DEBUG] 2021-04-26 22:56:21.609 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[DEBUG] 2021-04-26 22:56:21.624 [http-nio-8080-exec-2] ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[DEBUG] 2021-04-26 22:56:21.627 [http-nio-8080-exec-2] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-04-26 22:56:28.139 [http-nio-8080-exec-3] DispatcherServlet - GET "/photos/1_ngoan.jpg", parameters={}
+[DEBUG] 2021-04-26 22:56:28.140 [http-nio-8080-exec-3] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 22:56:28.143 [http-nio-8080-exec-3] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 23:01:25.814 [http-nio-8080-exec-10] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-26 23:01:25.814 [http-nio-8080-exec-10] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest)
+[DEBUG] 2021-04-26 23:01:25.819 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:01:25.819 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Writing ["Upload success"]
+[DEBUG] 2021-04-26 23:01:25.821 [http-nio-8080-exec-10] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 23:07:52.347 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 23:07:52.409 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-26 23:07:52.448 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-26 23:07:52.460 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-26 23:07:54.667 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 23:07:54.668 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-26 23:07:54.668 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-26 23:07:54.668 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-26 23:07:54.670 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@568e63c3
+[DEBUG] 2021-04-26 23:07:54.670 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@79d15343
+[DEBUG] 2021-04-26 23:07:54.671 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-26 23:07:54.671 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 3 ms
+[DEBUG] 2021-04-26 23:07:54.691 [http-nio-8080-exec-1] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-26 23:07:54.697 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest)
+[DEBUG] 2021-04-26 23:07:54.745 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleAllExceptions(Exception, WebRequest)
+[DEBUG] 2021-04-26 23:07:54.786 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:07:54.788 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@9bd81f8]
+[WARN ] 2021-04-26 23:07:54.809 [http-nio-8080-exec-1] ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.util.NestedServletException: Handler dispatch failed; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Resource cannot be resolved to a type
+]
+[DEBUG] 2021-04-26 23:07:54.810 [http-nio-8080-exec-1] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-26 23:08:14.513 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 23:08:14.588 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-26 23:08:14.619 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-26 23:08:14.631 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-26 23:08:14.841 [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 23:08:14.842 [http-nio-8080-exec-2] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-26 23:08:14.842 [http-nio-8080-exec-2] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-26 23:08:14.842 [http-nio-8080-exec-2] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-26 23:08:14.844 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@237e3a38
+[DEBUG] 2021-04-26 23:08:14.844 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4912a9b5
+[DEBUG] 2021-04-26 23:08:14.844 [http-nio-8080-exec-2] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-26 23:08:14.845 [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 4 ms
+[DEBUG] 2021-04-26 23:08:14.869 [http-nio-8080-exec-2] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-26 23:08:14.876 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest)
+[DEBUG] 2021-04-26 23:08:15.044 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:08:15.045 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing ["photos/src/main/resources/static/photos/1_openjdk_Tags.jpg"]
+[DEBUG] 2021-04-26 23:08:15.055 [http-nio-8080-exec-2] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 23:08:45.586 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 23:08:45.654 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-26 23:08:45.683 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-26 23:08:45.693 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-26 23:08:46.838 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 23:08:46.839 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-26 23:08:46.839 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-26 23:08:46.839 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-26 23:08:46.841 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@39263c2c
+[DEBUG] 2021-04-26 23:08:46.843 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@d3c3a70
+[DEBUG] 2021-04-26 23:08:46.844 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-26 23:08:46.845 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 7 ms
+[DEBUG] 2021-04-26 23:08:46.874 [http-nio-8080-exec-1] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-26 23:08:46.880 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest)
+[DEBUG] 2021-04-26 23:08:47.030 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:08:47.031 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing ["photos/1_openjdk_Tags.jpg"]
+[DEBUG] 2021-04-26 23:08:47.037 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 23:08:54.917 [http-nio-8080-exec-3] DispatcherServlet - POST "/photos/1_openjdk_Tags.jpg", parameters={masked}
+[DEBUG] 2021-04-26 23:08:54.919 [http-nio-8080-exec-3] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[WARN ] 2021-04-26 23:08:54.922 [http-nio-8080-exec-3] DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+[DEBUG] 2021-04-26 23:08:54.924 [http-nio-8080-exec-3] DispatcherServlet - Completed 405 METHOD_NOT_ALLOWED
+[DEBUG] 2021-04-26 23:08:54.926 [http-nio-8080-exec-3] DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={masked}
+[DEBUG] 2021-04-26 23:08:54.928 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-04-26 23:08:54.936 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:08:54.940 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [{timestamp=Mon Apr 26 23:08:54 ICT 2021, status=405, error=Method Not Allowed, trace=org.springframe (truncated)...]
+[DEBUG] 2021-04-26 23:08:54.969 [http-nio-8080-exec-3] DispatcherServlet - Exiting from "ERROR" dispatch, status 405
+[DEBUG] 2021-04-26 23:09:14.699 [http-nio-8080-exec-1] DispatcherServlet - GET "/photos/1_openjdk_Tags.jpg", parameters={}
+[DEBUG] 2021-04-26 23:09:14.701 [http-nio-8080-exec-1] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 23:09:14.706 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 23:21:17.372 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 23:21:17.377 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-26 23:21:17.391 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-26 23:21:17.397 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-26 23:22:16.533 [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 23:22:16.533 [http-nio-8080-exec-2] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-26 23:22:16.534 [http-nio-8080-exec-2] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-26 23:22:16.535 [http-nio-8080-exec-2] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-26 23:22:16.535 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@549ed5bf
+[DEBUG] 2021-04-26 23:22:16.536 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@62afe2a2
+[DEBUG] 2021-04-26 23:22:16.536 [http-nio-8080-exec-2] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-26 23:22:16.536 [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 3 ms
+[DEBUG] 2021-04-26 23:22:16.541 [http-nio-8080-exec-2] DispatcherServlet - POST "/photos/1_openjdk_Tags.jpg", parameters={masked}
+[DEBUG] 2021-04-26 23:22:16.542 [http-nio-8080-exec-2] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 23:22:16.543 [http-nio-8080-exec-2] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-04-26 23:22:16.544 [http-nio-8080-exec-2] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-26 23:22:16.544 [http-nio-8080-exec-2] DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={masked}
+[DEBUG] 2021-04-26 23:22:16.545 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-04-26 23:22:16.546 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:22:16.547 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [{timestamp=Mon Apr 26 23:22:16 ICT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+[DEBUG] 2021-04-26 23:22:16.549 [http-nio-8080-exec-2] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-04-26 23:22:44.909 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 23:22:44.976 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-26 23:22:45.014 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-26 23:22:45.027 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 23:22:51.467 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 23:22:51.476 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-26 23:22:51.492 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-26 23:22:51.500 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-26 23:22:54.293 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 23:22:54.294 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-26 23:22:54.294 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-26 23:22:54.294 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-26 23:22:54.295 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4de434d8
+[DEBUG] 2021-04-26 23:22:54.296 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@606dbe0d
+[DEBUG] 2021-04-26 23:22:54.296 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-26 23:22:54.297 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 3 ms
+[DEBUG] 2021-04-26 23:22:54.322 [http-nio-8080-exec-1] DispatcherServlet - POST "/photos/1_openjdk_Tags.jpg", parameters={masked}
+[DEBUG] 2021-04-26 23:22:54.331 [http-nio-8080-exec-1] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 23:22:54.335 [http-nio-8080-exec-1] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-04-26 23:22:54.337 [http-nio-8080-exec-1] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-26 23:22:54.340 [http-nio-8080-exec-1] DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={masked}
+[DEBUG] 2021-04-26 23:22:54.342 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-04-26 23:22:54.363 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:22:54.366 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [{timestamp=Mon Apr 26 23:22:54 ICT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+[DEBUG] 2021-04-26 23:22:54.397 [http-nio-8080-exec-1] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-04-26 23:23:47.441 [http-nio-8080-exec-2] DispatcherServlet - POST "/photos/1_openjdk_Tags.jpg", parameters={masked}
+[DEBUG] 2021-04-26 23:23:47.442 [http-nio-8080-exec-2] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 23:23:47.444 [http-nio-8080-exec-2] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-04-26 23:23:47.444 [http-nio-8080-exec-2] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-26 23:23:47.445 [http-nio-8080-exec-2] DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={masked}
+[DEBUG] 2021-04-26 23:23:47.446 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-04-26 23:23:47.446 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:23:47.447 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [{timestamp=Mon Apr 26 23:23:47 ICT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+[DEBUG] 2021-04-26 23:23:47.448 [http-nio-8080-exec-2] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-04-26 23:24:02.044 [http-nio-8080-exec-3] DispatcherServlet - POST "/photos/1_openjdk_Tags.jpg", parameters={masked}
+[DEBUG] 2021-04-26 23:24:02.045 [http-nio-8080-exec-3] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 23:24:02.046 [http-nio-8080-exec-3] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-04-26 23:24:02.047 [http-nio-8080-exec-3] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-26 23:24:02.048 [http-nio-8080-exec-3] DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={masked}
+[DEBUG] 2021-04-26 23:24:02.049 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-04-26 23:24:02.051 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:24:02.052 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [{timestamp=Mon Apr 26 23:24:02 ICT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+[DEBUG] 2021-04-26 23:24:02.053 [http-nio-8080-exec-3] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-04-26 23:24:09.086 [http-nio-8080-exec-5] DispatcherServlet - POST "/photos/", parameters={masked}
+[DEBUG] 2021-04-26 23:24:09.087 [http-nio-8080-exec-5] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 23:24:09.088 [http-nio-8080-exec-5] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-04-26 23:24:09.089 [http-nio-8080-exec-5] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-26 23:24:09.089 [http-nio-8080-exec-5] DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={masked}
+[DEBUG] 2021-04-26 23:24:09.090 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-04-26 23:24:09.091 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:24:09.091 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [{timestamp=Mon Apr 26 23:24:09 ICT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+[DEBUG] 2021-04-26 23:24:09.093 [http-nio-8080-exec-5] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-04-26 23:24:18.183 [http-nio-8080-exec-1] DispatcherServlet - POST "/", parameters={masked}
+[DEBUG] 2021-04-26 23:24:18.184 [http-nio-8080-exec-1] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 23:24:18.184 [http-nio-8080-exec-1] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-04-26 23:24:18.185 [http-nio-8080-exec-1] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-26 23:24:18.186 [http-nio-8080-exec-1] DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={masked}
+[DEBUG] 2021-04-26 23:24:18.186 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-04-26 23:24:18.187 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:24:18.188 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing [{timestamp=Mon Apr 26 23:24:18 ICT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+[DEBUG] 2021-04-26 23:24:18.189 [http-nio-8080-exec-1] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-04-26 23:24:24.354 [http-nio-8080-exec-2] DispatcherServlet - POST "/", parameters={masked}
+[DEBUG] 2021-04-26 23:24:24.355 [http-nio-8080-exec-2] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 23:24:24.356 [http-nio-8080-exec-2] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-04-26 23:24:24.357 [http-nio-8080-exec-2] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-26 23:24:24.358 [http-nio-8080-exec-2] DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={masked}
+[DEBUG] 2021-04-26 23:24:24.361 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-04-26 23:24:24.362 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:24:24.362 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [{timestamp=Mon Apr 26 23:24:24 ICT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+[DEBUG] 2021-04-26 23:24:24.364 [http-nio-8080-exec-2] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-04-26 23:24:30.683 [http-nio-8080-exec-3] DispatcherServlet - POST "/up", parameters={masked}
+[DEBUG] 2021-04-26 23:24:30.684 [http-nio-8080-exec-3] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 23:24:30.686 [http-nio-8080-exec-3] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-04-26 23:24:30.686 [http-nio-8080-exec-3] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-26 23:24:30.687 [http-nio-8080-exec-3] DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={masked}
+[DEBUG] 2021-04-26 23:24:30.687 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-04-26 23:24:30.688 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:24:30.688 [http-nio-8080-exec-3] HttpEntityMethodProcessor - Writing [{timestamp=Mon Apr 26 23:24:30 ICT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+[DEBUG] 2021-04-26 23:24:30.689 [http-nio-8080-exec-3] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-04-26 23:24:35.277 [http-nio-8080-exec-5] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-26 23:24:35.277 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest)
+[DEBUG] 2021-04-26 23:24:39.157 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:24:39.158 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing ["photos/1_ngoan.jpg"]
+[DEBUG] 2021-04-26 23:24:39.160 [http-nio-8080-exec-5] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 23:25:09.275 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 23:25:09.328 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-26 23:25:09.365 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-26 23:25:09.375 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-26 23:25:11.519 [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 23:25:11.519 [http-nio-8080-exec-2] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-26 23:25:11.520 [http-nio-8080-exec-2] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-26 23:25:11.520 [http-nio-8080-exec-2] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-26 23:25:11.521 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@568e63c3
+[DEBUG] 2021-04-26 23:25:11.522 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@79d15343
+[DEBUG] 2021-04-26 23:25:11.522 [http-nio-8080-exec-2] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-26 23:25:11.523 [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 4 ms
+[DEBUG] 2021-04-26 23:25:11.541 [http-nio-8080-exec-2] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-26 23:25:11.548 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest)
+[DEBUG] 2021-04-26 23:25:11.713 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:25:11.714 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing ["http://localhost:8080/photos/1_ngoan.jpg"]
+[DEBUG] 2021-04-26 23:25:11.723 [http-nio-8080-exec-2] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 23:25:21.969 [http-nio-8080-exec-3] DispatcherServlet - GET "/photos/1_ngoan.jpg", parameters={}
+[DEBUG] 2021-04-26 23:25:21.972 [http-nio-8080-exec-3] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 23:25:21.976 [http-nio-8080-exec-3] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 23:26:06.646 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 23:26:06.712 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-26 23:26:06.747 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-26 23:26:06.766 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-26 23:26:44.762 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 23:26:44.762 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-26 23:26:44.762 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-26 23:26:44.762 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-26 23:26:44.764 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3a3c1da0
+[DEBUG] 2021-04-26 23:26:44.765 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2b3207af
+[DEBUG] 2021-04-26 23:26:44.765 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-26 23:26:44.766 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 4 ms
+[DEBUG] 2021-04-26 23:26:44.772 [http-nio-8080-exec-1] DispatcherServlet - GET "/photos/1_ngoan.jpg", parameters={}
+[DEBUG] 2021-04-26 23:26:44.777 [http-nio-8080-exec-1] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 23:26:44.790 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 23:26:53.526 [http-nio-8080-exec-3] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-26 23:26:53.530 [http-nio-8080-exec-3] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-04-26 23:31:21.000 [http-nio-8080-exec-4] DispatcherServlet - GET "/photos/1_ngoan.jpg", parameters={}
+[DEBUG] 2021-04-26 23:31:21.001 [http-nio-8080-exec-4] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 23:31:21.005 [http-nio-8080-exec-4] DispatcherServlet - Completed 206 PARTIAL_CONTENT
+[DEBUG] 2021-04-26 23:35:44.113 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 23:35:44.174 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-26 23:35:44.210 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-26 23:35:44.224 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-26 23:35:47.087 [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 23:35:47.088 [http-nio-8080-exec-2] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-26 23:35:47.088 [http-nio-8080-exec-2] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-26 23:35:47.088 [http-nio-8080-exec-2] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-26 23:35:47.090 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@48181ada
+[DEBUG] 2021-04-26 23:35:47.090 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@265ddbb6
+[DEBUG] 2021-04-26 23:35:47.091 [http-nio-8080-exec-2] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-26 23:35:47.091 [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 3 ms
+[DEBUG] 2021-04-26 23:35:47.109 [http-nio-8080-exec-2] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-26 23:35:47.117 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-04-26 23:36:52.522 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 23:36:52.579 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-26 23:36:52.614 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-26 23:36:52.629 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-26 23:37:01.149 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 23:37:01.149 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-26 23:37:01.149 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-26 23:37:01.150 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-26 23:37:01.152 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@78af9587
+[DEBUG] 2021-04-26 23:37:01.152 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@13d52f71
+[DEBUG] 2021-04-26 23:37:01.152 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-26 23:37:01.153 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 4 ms
+[DEBUG] 2021-04-26 23:37:01.171 [http-nio-8080-exec-1] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-26 23:37:01.177 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-04-26 23:38:12.834 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 23:38:12.898 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-26 23:38:12.941 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-26 23:38:12.953 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-26 23:38:17.042 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 23:38:17.043 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-26 23:38:17.043 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-26 23:38:17.043 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-26 23:38:17.044 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@ba4dcc0
+[DEBUG] 2021-04-26 23:38:17.045 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@64c1348d
+[DEBUG] 2021-04-26 23:38:17.045 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-26 23:38:17.045 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 2 ms
+[DEBUG] 2021-04-26 23:38:17.065 [http-nio-8080-exec-1] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-26 23:38:17.072 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-04-26 23:40:15.458 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 23:40:15.522 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-26 23:40:15.561 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-26 23:40:15.573 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-26 23:40:19.648 [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 23:40:19.648 [http-nio-8080-exec-2] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-26 23:40:19.648 [http-nio-8080-exec-2] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-26 23:40:19.648 [http-nio-8080-exec-2] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-26 23:40:19.649 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@40285c46
+[DEBUG] 2021-04-26 23:40:19.650 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@27d06178
+[DEBUG] 2021-04-26 23:40:19.650 [http-nio-8080-exec-2] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-26 23:40:19.651 [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 3 ms
+[DEBUG] 2021-04-26 23:40:19.678 [http-nio-8080-exec-2] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-26 23:40:19.687 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-04-26 23:41:17.772 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-26 23:41:17.830 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-26 23:41:17.866 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-26 23:41:17.876 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-26 23:41:19.306 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 23:41:19.306 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-26 23:41:19.307 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-26 23:41:19.307 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-26 23:41:19.309 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3a7cadc9
+[DEBUG] 2021-04-26 23:41:19.309 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@540cf24e
+[DEBUG] 2021-04-26 23:41:19.310 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-26 23:41:19.310 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 4 ms
+[DEBUG] 2021-04-26 23:41:19.329 [http-nio-8080-exec-1] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-26 23:41:19.336 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-04-26 23:41:19.473 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 23:41:19.474 [http-nio-8080-exec-1] HttpEntityMethodProcessor - Writing ["http://localhost:8080/photos/1_ngoan.jpg"]
+[DEBUG] 2021-04-26 23:41:19.481 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 23:41:25.778 [http-nio-8080-exec-3] DispatcherServlet - GET "/photos/1_ngoan.jpg", parameters={}
+[DEBUG] 2021-04-26 23:41:25.781 [http-nio-8080-exec-3] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-26 23:41:25.785 [http-nio-8080-exec-3] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-28 10:09:47.821 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-04-28 10:09:47.982 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-04-28 10:09:48.153 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-04-28 10:09:48.180 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-04-28 10:10:48.347 [http-nio-8080-exec-2] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-28 10:10:48.358 [http-nio-8080-exec-2] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-28 10:10:48.358 [http-nio-8080-exec-2] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-28 10:10:48.359 [http-nio-8080-exec-2] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-28 10:10:48.362 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2c4ef220
+[DEBUG] 2021-04-28 10:10:48.363 [http-nio-8080-exec-2] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3b09d4ac
+[DEBUG] 2021-04-28 10:10:48.363 [http-nio-8080-exec-2] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-28 10:10:48.364 [http-nio-8080-exec-2] DispatcherServlet - Completed initialization in 5 ms
+[DEBUG] 2021-04-28 10:10:48.391 [http-nio-8080-exec-2] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-28 10:10:48.404 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-04-28 10:10:48.665 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-28 10:10:48.666 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing ["http://localhost:8080/photos/1_NewDelhi.jpg"]
+[DEBUG] 2021-04-28 10:10:48.676 [http-nio-8080-exec-2] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-28 10:10:54.990 [http-nio-8080-exec-3] DispatcherServlet - GET "/photos/1_NewDelhi.jpg", parameters={}
+[DEBUG] 2021-04-28 10:10:54.995 [http-nio-8080-exec-3] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-28 10:10:55.002 [http-nio-8080-exec-3] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-28 10:10:55.138 [http-nio-8080-exec-4] DispatcherServlet - GET "/favicon.ico", parameters={}
+[DEBUG] 2021-04-28 10:10:55.139 [http-nio-8080-exec-4] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-28 10:10:55.141 [http-nio-8080-exec-4] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-04-28 10:10:55.142 [http-nio-8080-exec-4] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-28 10:10:55.147 [http-nio-8080-exec-4] DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[DEBUG] 2021-04-28 10:10:55.150 [http-nio-8080-exec-4] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-04-28 10:10:55.164 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-28 10:10:55.168 [http-nio-8080-exec-4] HttpEntityMethodProcessor - Writing [{timestamp=Wed Apr 28 10:10:55 ICT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+[DEBUG] 2021-04-28 10:10:55.220 [http-nio-8080-exec-4] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-04-28 10:13:12.240 [http-nio-8080-exec-8] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-28 10:13:12.241 [http-nio-8080-exec-8] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-04-28 10:13:52.000 [http-nio-8080-exec-8] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleBookStoreException(RESTException, WebRequest)
+[DEBUG] 2021-04-28 10:13:53.952 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-28 10:13:53.954 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@67744759]
+[WARN ] 2021-04-28 10:13:53.958 [http-nio-8080-exec-8] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.simpleupload.exception.RESTException: Failed to store file src/main/resources/static/photos/2_NewDelhi.jpg]
+[DEBUG] 2021-04-28 10:13:53.960 [http-nio-8080-exec-8] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-28 10:14:42.954 [http-nio-8080-exec-2] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-04-28 10:14:42.955 [http-nio-8080-exec-2] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-04-28 10:14:42.979 [http-nio-8080-exec-2] HandlerMethod - Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<java.lang.String> vn.techmaster.simpleupload.controller.UploadController.upload(vn.techmaster.simpleupload.request.PhotoRequest,javax.servlet.http.HttpServletRequest): org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'photoRequest' on field 'description': rejected value [N2]; codes [Size.photoRequest.description,Size.description,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [photoRequest.description,description]; arguments []; default message [description],200,5]; default message [size must be between 5 and 200]
+[DEBUG] 2021-04-28 10:14:42.979 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[DEBUG] 2021-04-28 10:14:42.982 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-28 10:14:42.982 [http-nio-8080-exec-2] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@6696225c]
+[WARN ] 2021-04-28 10:14:42.984 [http-nio-8080-exec-2] ExceptionHandlerExceptionResolver - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'photoRequest' on field 'description': rejected value [N2]; codes [Size.photoRequest.description,Size.description,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [photoRequest.description,description]; arguments []; default message [description],200,5]; default message [size must be between 5 and 200]]
+[DEBUG] 2021-04-28 10:14:42.985 [http-nio-8080-exec-2] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-04-28 10:24:19.424 [http-nio-8080-exec-9] DispatcherServlet - GET "/photos/1_NewDelhi.jpg", parameters={}
+[DEBUG] 2021-04-28 10:24:19.692 [http-nio-8080-exec-9] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-04-28 10:24:19.694 [http-nio-8080-exec-9] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-04-28 10:24:19.695 [http-nio-8080-exec-9] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-04-28 10:24:19.696 [http-nio-8080-exec-9] DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[DEBUG] 2021-04-28 10:24:19.696 [http-nio-8080-exec-9] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-04-28 10:24:19.697 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-28 10:24:19.698 [http-nio-8080-exec-9] HttpEntityMethodProcessor - Writing [{timestamp=Wed Apr 28 10:24:19 ICT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+[DEBUG] 2021-04-28 10:24:19.702 [http-nio-8080-exec-9] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-07-19 22:47:04.498 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-07-19 22:47:04.581 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-07-19 22:47:04.627 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-07-19 22:47:04.643 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[DEBUG] 2021-07-19 22:47:21.185 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-07-19 22:47:21.262 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-07-19 22:47:21.309 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-07-19 22:47:21.324 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-07-19 22:51:38.392 [http-nio-8080-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-07-19 22:51:38.392 [http-nio-8080-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-07-19 22:51:38.393 [http-nio-8080-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-07-19 22:51:38.393 [http-nio-8080-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-07-19 22:51:38.395 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@49ddbe53
+[DEBUG] 2021-07-19 22:51:38.395 [http-nio-8080-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2c3645b3
+[DEBUG] 2021-07-19 22:51:38.396 [http-nio-8080-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-07-19 22:51:38.396 [http-nio-8080-exec-1] DispatcherServlet - Completed initialization in 4 ms
+[DEBUG] 2021-07-19 22:51:38.406 [http-nio-8080-exec-1] DispatcherServlet - GET "/", parameters={}
+[DEBUG] 2021-07-19 22:51:38.412 [http-nio-8080-exec-1] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-07-19 22:51:38.416 [http-nio-8080-exec-1] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-07-19 22:51:38.416 [http-nio-8080-exec-1] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-07-19 22:51:38.423 [http-nio-8080-exec-1] DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[DEBUG] 2021-07-19 22:51:38.425 [http-nio-8080-exec-1] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+[DEBUG] 2021-07-19 22:51:38.450 [http-nio-8080-exec-1] ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+[DEBUG] 2021-07-19 22:51:38.458 [http-nio-8080-exec-1] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-07-19 22:53:32.677 [http-nio-8080-exec-5] DispatcherServlet - POST "/u", parameters={masked}
+[DEBUG] 2021-07-19 22:53:32.682 [http-nio-8080-exec-5] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-07-19 22:53:32.684 [http-nio-8080-exec-5] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-07-19 22:53:32.685 [http-nio-8080-exec-5] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-07-19 22:53:32.686 [http-nio-8080-exec-5] DispatcherServlet - "ERROR" dispatch for POST "/error", parameters={masked}
+[DEBUG] 2021-07-19 22:53:32.687 [http-nio-8080-exec-5] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-07-19 22:53:32.701 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-07-19 22:53:32.703 [http-nio-8080-exec-5] HttpEntityMethodProcessor - Writing [{timestamp=Mon Jul 19 22:53:32 ICT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+[DEBUG] 2021-07-19 22:53:32.737 [http-nio-8080-exec-5] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+[DEBUG] 2021-07-19 22:53:47.607 [http-nio-8080-exec-6] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-07-19 22:53:47.608 [http-nio-8080-exec-6] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-07-19 22:53:47.723 [http-nio-8080-exec-6] HandlerMethod - Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<java.lang.String> vn.techmaster.simpleupload.controller.UploadController.upload(vn.techmaster.simpleupload.request.PhotoRequest,javax.servlet.http.HttpServletRequest): org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'photoRequest' on field 'description': rejected value [d]; codes [Size.photoRequest.description,Size.description,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [photoRequest.description,description]; arguments []; default message [description],200,5]; default message [size must be between 5 and 200]
+[DEBUG] 2021-07-19 22:53:47.725 [http-nio-8080-exec-6] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleException(Exception, WebRequest)
+[DEBUG] 2021-07-19 22:53:47.740 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-07-19 22:53:47.741 [http-nio-8080-exec-6] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@12d85a6]
+[WARN ] 2021-07-19 22:53:47.745 [http-nio-8080-exec-6] ExceptionHandlerExceptionResolver - Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'photoRequest' on field 'description': rejected value [d]; codes [Size.photoRequest.description,Size.description,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [photoRequest.description,description]; arguments []; default message [description],200,5]; default message [size must be between 5 and 200]]
+[DEBUG] 2021-07-19 22:53:47.746 [http-nio-8080-exec-6] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-07-19 22:55:58.424 [http-nio-8080-exec-8] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-07-19 22:55:58.437 [http-nio-8080-exec-8] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-07-19 22:56:02.827 [http-nio-8080-exec-8] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleBookStoreException(RESTException, WebRequest)
+[DEBUG] 2021-07-19 22:56:04.436 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-07-19 22:56:04.437 [http-nio-8080-exec-8] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@c4be4c]
+[WARN ] 2021-07-19 22:56:04.439 [http-nio-8080-exec-8] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.simpleupload.exception.RESTException: Failed to store file src/main/resources/static/photos/1_springcloud.jpg]
+[DEBUG] 2021-07-19 22:56:04.440 [http-nio-8080-exec-8] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-07-19 22:56:50.381 [http-nio-8080-exec-10] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-07-19 22:56:50.381 [http-nio-8080-exec-10] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-07-19 22:56:55.928 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-07-19 22:56:55.929 [http-nio-8080-exec-10] HttpEntityMethodProcessor - Writing ["http://localhost:8080/photos/2_springcloud.jpg"]
+[DEBUG] 2021-07-19 22:56:55.930 [http-nio-8080-exec-10] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-07-19 22:57:06.515 [http-nio-8080-exec-1] DispatcherServlet - GET "/photos/2_springcloud.jpg", parameters={}
+[DEBUG] 2021-07-19 22:57:06.516 [http-nio-8080-exec-1] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-07-19 22:57:06.521 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK

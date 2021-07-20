@@ -1,0 +1,113 @@
+[INFO ] 2021-04-26 22:45:23.031 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 7735 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 22:45:23.038 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 22:45:23.040 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 22:45:27.019 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 4.424 seconds (JVM running for 5.49)
+[INFO ] 2021-04-26 22:46:12.311 [http-nio-8080-exec-1] UploadController - File size: 14204
+[INFO ] 2021-04-26 22:46:12.312 [http-nio-8080-exec-1] UploadController - Description: Chào các bạn tôi là 
+[ERROR] 2021-04-26 22:46:56.038 [http-nio-8080-exec-8] CustomExceptionHandler - No handler found
+[ERROR] 2021-04-26 22:46:58.880 [http-nio-8080-exec-1] CustomExceptionHandler - No handler found
+[INFO ] 2021-04-26 22:51:15.574 [http-nio-8080-exec-5] UploadController - File size: 14204
+[INFO ] 2021-04-26 22:51:15.574 [http-nio-8080-exec-5] UploadController - Description: Chào các bạn tôi là 
+[INFO ] 2021-04-26 22:51:16.755 [http-nio-8080-exec-10] UploadController - File size: 14204
+[INFO ] 2021-04-26 22:51:16.755 [http-nio-8080-exec-10] UploadController - Description: Chào các bạn tôi là 
+[ERROR] 2021-04-26 22:51:42.077 [http-nio-8080-exec-4] CustomExceptionHandler - RESTException : Failed to store file src/main/resources/static/photos/1_ngoan.jpg
+[ERROR] 2021-04-26 22:52:57.040 [http-nio-8080-exec-10] CustomExceptionHandler - No handler found
+[ERROR] 2021-04-26 22:52:57.262 [http-nio-8080-exec-4] CustomExceptionHandler - No handler found
+[ERROR] 2021-04-26 22:53:04.808 [http-nio-8080-exec-2] CustomExceptionHandler - No handler found
+[ERROR] 2021-04-26 22:53:04.846 [http-nio-8080-exec-8] CustomExceptionHandler - No handler found
+[ERROR] 2021-04-26 22:53:58.876 [http-nio-8080-exec-9] CustomExceptionHandler - No handler found
+[ERROR] 2021-04-26 22:53:58.922 [http-nio-8080-exec-6] CustomExceptionHandler - No handler found
+[ERROR] 2021-04-26 22:54:13.767 [http-nio-8080-exec-3] CustomExceptionHandler - No handler found
+[ERROR] 2021-04-26 22:54:13.801 [http-nio-8080-exec-1] CustomExceptionHandler - No handler found
+[ERROR] 2021-04-26 22:54:25.802 [http-nio-8080-exec-5] CustomExceptionHandler - No handler found
+[ERROR] 2021-04-26 22:54:25.839 [http-nio-8080-exec-10] CustomExceptionHandler - No handler found
+[INFO ] 2021-04-26 22:55:50.901 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 7735 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 22:55:50.902 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 22:55:50.902 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 22:55:52.661 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 8779 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 22:55:52.667 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 22:55:52.668 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 22:55:56.415 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 4.115 seconds (JVM running for 4.945)
+[INFO ] 2021-04-26 23:07:48.962 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 9525 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:07:48.966 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:07:48.968 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:07:52.582 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 3.991 seconds (JVM running for 4.958)
+[ERROR] 2021-04-26 23:07:54.750 [http-nio-8080-exec-1] CustomExceptionHandler - Generic Exception
+[INFO ] 2021-04-26 23:08:11.054 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 9623 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:08:11.058 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:08:11.060 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:08:14.789 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 4.105 seconds (JVM running for 4.919)
+[INFO ] 2021-04-26 23:08:42.056 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 9719 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:08:42.060 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:08:42.062 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:08:45.803 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 4.147 seconds (JVM running for 4.959)
+[INFO ] 2021-04-26 23:20:53.811 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 9719 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:20:53.812 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:20:53.813 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:20:56.241 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 9719 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:20:56.242 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:20:56.243 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:20:58.502 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 9719 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:20:58.503 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:20:58.504 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:21:03.691 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 9719 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:21:03.692 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:21:03.693 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:21:16.889 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 9719 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:21:16.890 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:21:16.890 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:21:17.430 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 0.585 seconds (JVM running for 756.568)
+[INFO ] 2021-04-26 23:22:41.443 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 10349 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:22:41.448 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:22:41.451 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:22:45.153 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 4.099 seconds (JVM running for 4.898)
+[INFO ] 2021-04-26 23:22:50.899 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 10349 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:22:50.900 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:22:50.902 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:22:51.548 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 0.708 seconds (JVM running for 11.292)
+[INFO ] 2021-04-26 23:25:03.723 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 10349 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:25:03.724 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:25:03.725 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:25:05.678 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 10517 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:25:05.682 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:25:05.683 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:25:09.500 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 4.171 seconds (JVM running for 4.96)
+[INFO ] 2021-04-26 23:26:03.539 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 10711 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:26:03.543 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:26:03.545 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:26:06.889 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 3.751 seconds (JVM running for 4.615)
+[INFO ] 2021-04-26 23:35:40.726 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 11456 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:35:40.731 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:35:40.732 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:35:44.343 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 3.97 seconds (JVM running for 4.926)
+[INFO ] 2021-04-26 23:36:49.283 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 11586 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:36:49.288 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:36:49.290 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:36:52.759 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 3.826 seconds (JVM running for 4.667)
+[INFO ] 2021-04-26 23:38:09.514 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 11761 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:38:09.518 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:38:09.520 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:38:13.093 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 3.956 seconds (JVM running for 4.971)
+[INFO ] 2021-04-26 23:40:12.225 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 12036 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:40:12.231 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:40:12.232 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:40:15.713 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 3.862 seconds (JVM running for 4.922)
+[INFO ] 2021-04-26 23:41:14.515 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 12151 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-26 23:41:14.520 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-26 23:41:14.521 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 23:41:18.000 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 3.852 seconds (JVM running for 4.682)
+[INFO ] 2021-04-28 10:09:43.106 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 1239 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-04-28 10:09:43.116 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-04-28 10:09:43.118 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-28 10:09:48.511 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 5.893 seconds (JVM running for 7.215)
+[ERROR] 2021-04-28 10:13:53.926 [http-nio-8080-exec-8] CustomExceptionHandler - RESTException : Failed to store file src/main/resources/static/photos/2_NewDelhi.jpg
+[ERROR] 2021-04-28 10:14:42.980 [http-nio-8080-exec-2] CustomExceptionHandler - Binding Exception
+[INFO ] 2021-07-19 22:47:00.262 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 7794 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-07-19 22:47:00.267 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-07-19 22:47:00.269 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-07-19 22:47:17.434 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16 on Cuong.local with PID 8007 (/Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload/target/classes started by techmaster in /Volumes/CODE/SpringBoot28Days/10-RESTBinary/simpleupload)
+[DEBUG] 2021-07-19 22:47:17.442 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-07-19 22:47:17.444 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-07-19 22:47:21.463 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 4.441 seconds (JVM running for 5.61)
+[ERROR] 2021-07-19 22:53:47.730 [http-nio-8080-exec-6] CustomExceptionHandler - Binding Exception
+[ERROR] 2021-07-19 22:56:04.436 [http-nio-8080-exec-8] CustomExceptionHandler - RESTException : Failed to store file src/main/resources/static/photos/1_springcloud.jpg
