@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head th:replace="template.html :: header('Error')">
+  </head>
+
+<body>
+  <nav th:replace="template.html :: menu"></nav>
+  <div class="container">
+    <div class="mt-5">
+      <p>Failed to upload file</p>
+      <p th:text="${errorMessage}">a file </p>
+    </div>
+  </div>
+</body>
+
+</html>

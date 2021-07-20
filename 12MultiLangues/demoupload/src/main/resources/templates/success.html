@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head th:replace="template.html :: header('Result')">
+
+<body>  
+  <nav th:replace="template.html :: menu"></nav>
+  <div class="container">
+    <div class="mt-5">
+      <p>Name: <span th:text="${name}"> name</span></p>
+      <p>Photo: <a th:href="|/photos/${photo}|" th:text="${photo}"> a file </a> successfully uploaded</p>
+    <div>
+  </div>
+</body>
+
+</html>
