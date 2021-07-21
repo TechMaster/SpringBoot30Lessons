@@ -17,30 +17,29 @@ import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 public class LanguageConfig implements WebMvcConfigurer {
   @Autowired private MessageSource messageSource;
 
-  @Bean
-  public LocaleResolver localeResolver() {
+  //Xác định ngôn ngữ người dùng chọn qua Cookie
+  @Bean public LocaleResolver localeResolver() {
     CookieLocaleResolver localeResolver = new CookieLocaleResolver();
     localeResolver.setDefaultLocale(Locale.US);
-
     return localeResolver;
   }
 
-  @Bean
-  public LocaleChangeInterceptor localeChangeInterceptor() {
+  //Đọc lựa chọn ngôn ngữ người dùng muốn chuyển sang qua tham số lang
+  @Bean public LocaleChangeInterceptor localeChangeInterceptor() {
     LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor();
     // Defaults to "locale" if not set
     localeChangeInterceptor.setParamName("lang");
     return localeChangeInterceptor;
   }
 
+  //Bổ xung localeChangeInterceptor vào danh sách intercepter xử lý request gửi lên
   @Override
   public void addInterceptors(InterceptorRegistry interceptorRegistry) {
     interceptorRegistry.addInterceptor(localeChangeInterceptor());
   }
 
-
-  @Bean
-  public LocalValidatorFactoryBean validator(MessageSource messageSource) {
+  //Hỗ trợ đa ngôn ngữ các thông điệp báo lỗi trong Hibernate Validator
+  @Bean public LocalValidatorFactoryBean validator(MessageSource messageSource) {
       LocalValidatorFactoryBean bean = new LocalValidatorFactoryBean();
       bean.setValidationMessageSource(messageSource);      
       return bean;

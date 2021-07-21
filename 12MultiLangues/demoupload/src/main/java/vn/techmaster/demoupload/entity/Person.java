@@ -18,8 +18,8 @@ public class Person {
   private String name;
 
   @NotBlank(message = "{email.cannot.null}")
-  @Email(message = "Not valid email")
+  @Email(message = "{email.invalid}")
   private String email;
 
-  private MultipartFile photo; //https://stackoverflow.com/questions/51383726/why-are-valid-annotations-ignored-on-multipartfile-objects-in-spring
+  private MultipartFile photo;
 }

@@ -18,8 +18,7 @@ import vn.techmaster.demoupload.service.StorageService;
 
 @Controller
 public class UploadController {
-  @Autowired
-  private StorageService storageService;
+  @Autowired private StorageService storageService;
 
   @GetMapping("/")
   public String home(Model model) {

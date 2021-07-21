@@ -25,21 +25,21 @@
         <form action="#" th:action="@{/}" method="post" name="person" enctype="multipart/form-data"
           th:object="${person}">
           <div class="form-group row">
-            <label for="name" class="col-sm-2 col-form-label" th:text="#{name}">Name</label>
+            <label for="name" class="col-sm-3 col-form-label" th:text="#{name}">Name</label>
             <div class="col-sm-6">
                 <input type="text" class="form-control" id="name" autocomplete="off" th:field="*{name}"/>
             </div>
             <div class="text-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</div>
           </div>
           <div class="form-group row mt-3">
-            <label for="email" class="col-sm-2 col-form-label" th:text="#{email}">Email</label>
+            <label for="email" class="col-sm-3 col-form-label" th:text="#{email}">Email</label>
             <div class="col-sm-6">
                 <input type="text" class="form-control" id="email" autocomplete="off" th:field="*{email}"/>
             </div>
             <div class="text-danger" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</div>
           </div>
           <div class="form-group row mt-3">
-            <label for="email" class="col-sm-2 col-form-label" th:text="#{select_photo}">Select a photo</label>
+            <label for="email" class="col-sm-3 col-form-label" th:text="#{select_photo}">Select a photo</label>
             <div class="col-sm-6">
               <input type="file" class="form-control"th:field="*{photo}" />
             </div>
