@@ -84,9 +84,10 @@ resources > templates > error > 404.html
 ## Upload Binary
 
 Hỏi: Tại sao khi upload file, web server luôn lưu ra file tạm ở thư mục temporary?
+
 Đáp: Với những file có kích thước lớn, trình duyệt sẽ gửi file binary theo từng khúc (trunk), web server sẽ nhận từng trunk rồi ghép lại. File đang ghép dở sẽ là file tạm ở thư mục tạm. Khi nào ghép đầy đủ các khung, thì web server cần copy sang thư mục chỉ định.
 
-
+---
 ## Validation
 Hỏi: Server Side Validation khác gì Client Side Validation?
 
