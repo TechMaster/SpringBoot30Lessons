@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="template::header('List')"></head>
+<body>
+<nav th:replace="template::menu"></nav>
+<div style="margin-top: 80px; margin-left: 25px">
+    <h1>
+        <a th:href="@{/}">New Person</a>
+    </h1>
+</div>
+<div class="container">
+
+    <div class="row my-3" th:each="person:${people}">
+        <div class="col-sm-6 offset-sm-3">
+            <div class="card">
+                <div class="row card-body">
+                    <a th:href="@{/person/{id}(id=${person.id})}" class="col-sm-6">
+                        <img class="img-fluid" th:src="@{'/photos/' + ${person.id} + '.jpg'}"
+                             alt="people image"/>
+                    </a>
+
+                    <div class="col-sm-6">
+                        <h3 class="card-title" th:text="${person.name}"></h3>
+                        <p class="card-text" th:text="${person.birthDay}"></p>
+                        <p class="card-text" th:if="${person.gender}">Male</p>
+                        <p class="card-text" th:unless="${person.gender}">Fermale</p>
+                        <p class="card-text" th:text="${person.job}"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer th:replace="template::footer"></footer>
+</body>
+</html>
