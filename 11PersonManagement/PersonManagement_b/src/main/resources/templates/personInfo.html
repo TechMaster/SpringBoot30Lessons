@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="template::header('personInfo')"></head>
+<body>
+<nav th:replace="template::menu"></nav>
+<br><br>
+<div class="container">
+    <div class="row my-5">
+        <div class="col-4 mx-auto">
+            <img th:src="@{'/photos/' + ${person.id} + '.jpg'}" alt="Photo" class="img-fluid">
+            <div class="d-flex justify-content-center">
+                <a th:href="@{/person/edit/{id}(id=${person.id})}">Edit</a>&nbsp;&nbsp;
+                <a th:href="@{/person/delete/{id}(id=${person.id})}">Delete</a><br>
+            </div>
+
+        </div>
+        <div class="col-2 mx-auto ">
+            <h6>Full Namer</h6>
+            <p th:text="${person.name}"></p>
+        </div>
+        <div class="col-2 mx-auto ">
+            <h6>Birthday</h6>
+            <p th:text="${person.birthDay}"></p>
+        </div>
+        <div class="col-2 mx-auto">
+            <h6>Job</h6>
+            <p th:text="${person.job}"></p>
+        </div>
+        <div class="col-2 mx-auto">
+            <h6>Gender</h6>
+            <p th:if="${person.gender}">Male</p>
+            <p th:unless="${person.gender}">Fermale</p>
+        </div>
+    </div>
+    <footer th:replace="template::footer"></footer>
+</div>
+</body>
+</html>
