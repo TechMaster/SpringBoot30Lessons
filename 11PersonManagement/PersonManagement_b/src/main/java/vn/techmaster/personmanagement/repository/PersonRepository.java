@@ -52,11 +52,6 @@ public class PersonRepository {
         deleteById(person.getId());
     }
 
-//    public Person search(String name){
-//        return people.stream().filter(person->person.getName().contains(name)).findAny().orElseThrow(null);
-//    }
-
-
 
     public Optional<Person> get(int id) {
         return people.stream().filter(p -> p.getId() == id).findFirst();

@@ -33,6 +33,7 @@ public class PersonalController {
     @Autowired
     private JobRepository jobRepo;
 
+
     //Trang chu
     @GetMapping("/")
     public String home(Model model) {
@@ -58,6 +59,7 @@ public class PersonalController {
         }
         storageService.uploadFile(person.getPhoto(), person.getId());
         model.addAttribute("people", personRepo.getAll());
+
         return "listAll";
 
     }
@@ -98,21 +100,11 @@ public class PersonalController {
     //Xoa person
     @GetMapping("/person/delete/{id}")
     public String deletePerson(@PathVariable("id") int id, Model model) {
+        storageService.deleteFile(id);
         personRepo.deleteById(id);
         model.addAttribute("people", personRepo.getAll());
         return "redirect:/listAll";
     }
 
-//    @GetMapping("/search")
-//    public String searchPerson(HttpServletRequest request, Model model) {
-//        String name = request.getParameter("name");
-//        if (name == "") {
-//            model.addAttribute("people", personRepo.getAll());
-//            return "redirect:/listAll";
-//        } else {
-//            Person person = personRepo.search(name);
-//            model.addAttribute("people", person);
-//            return "listAll";
-//        }
-//    }
+
 }
