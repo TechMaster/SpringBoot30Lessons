@@ -16,6 +16,17 @@ public class LanguageConfig implements WebMvcConfigurer {
   }
 }
 ```
+Cách cũ sử dụng class mặc định tuân thủ `MessageSource`
+```java
+@Autowired private MessageSource messageSource;
+```
+
+Cách mới tạo DBMessageSource rồi trả về
+```java
+@Bean public MessageSource messageSource() {
+  return new DBMessageSource();
+}
+```
 
 Việc sử dụng một Bean component qua kiểu interface giúp ứng dụng không bị ràng buộc cố định vào một class cụ thể. Chúng ta có thể tạo ra một class tuân thủ interface MessageSource, lấy thông tin chuỗi của từng ngôn ngữ trong CSDL quan hệ thay vì lưu ở file [res.properties](src/main/resources/lang/res.properties) và [res_vn.properties](src/main/resources/lang/res_vn.properties)
 
