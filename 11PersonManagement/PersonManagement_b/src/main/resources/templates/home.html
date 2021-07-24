@@ -20,12 +20,7 @@
                       <label for="job" class="col-sm-4 col-form-label">Job</label>
                       <div class="col-sm-8">
                           <select name="job" id="job" th:field="*{job}">
-                              <option th:each="job:${jobs}"  th:value="${job.name}" th:text="${job.name}">Developer</option>
-<!--                              <option value="Banker">Banker</option>-->
-<!--                              <option value="Taxi Driver">Taxi Driver</option>-->
-<!--                              <option value="Engineer">Engineer</option>-->
-<!--                              <option value="Editor">Editor</option>-->
-<!--                              <option value="Actor">Actor</option>-->
+                              <option th:each="job:${jobs}"  th:value="${job.name}" th:text="${job.name}"></option>
                           </select>
                           <a th:href="@{/addJob}">
                               <i class="fas fa-plus-circle"></i>
