@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+</head>
+
+<body>
+  <p>
+    Type in browser address:
+  <ul>
+    <li><a href="http://localhost:8080/color/black">http://localhost:8080/color/black</a></li>
+    <li><a href="http://localhost:8080/color/white">http://localhost:8080/color/white</a></li>
+    <li><a href="http://localhost:8080/color/green">http://localhost:8080/color/green</a></li>
+    <li><a href="http://localhost:8080/color/pink">http://localhost:8080/color/pink</a></li>
+    <li><a href="http://localhost:8080/color/magenta">http://localhost:8080/color/magenta</a></li>
+    <li><a href="http://localhost:8080/color/brown">http://localhost:8080/color/brown</a></li>
+  </ul>
+  <a href="/">Go home</a><br>
+  <a href="/other">Other page</a><br>
+  </p>
+  <script th:replace="template :: changeColor">
+  </script>
+</body>
+
+</html>
