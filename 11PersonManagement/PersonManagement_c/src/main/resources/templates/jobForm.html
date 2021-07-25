@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="template::header('Job From')"></head>
+<body>
+<nav th:replace="template::menu"></nav>
+<br><br>
+<div class="container">
+  <div class="row mt-2">
+    <h1 th:text="#{add.new.job}">Add new job</h1>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 mt-1">
+      <form th:action="@{/addJob}" method="post" th:object="${job}">
+        <input type="hidden" placeholder="id" th:field="*{id}"/><br><br>
+        <div class="form-group row">
+          <div class="col-sm-8">
+            <input type="text" name="name" id="name" th:field="*{name}">
+          </div>
+          <div class="text-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}" >Name Error</div>
+          <div class="text-danger" th:if="${error}" th:text="#{job.exist}"></div>
+        </div>
+        <button class="btn btn-primary mt-3" type="submit" th:text="#{submit_form}">Add</button>
+      </form>
+    </div>
+
+  </div>
+
+</div>
+<footer th:replace="template::footer"></footer>
+</body>
+</html>
