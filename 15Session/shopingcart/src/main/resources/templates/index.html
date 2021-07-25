@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head th:replace="template :: header('product')">
+</head>
+
+<body>
+  <nav th:replace="template :: nav(${cartCount})"></nav>
+
+  <div class="container">
+    <div class="row my-3" th:each="product:${products}">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="row card-body">
+            <img class="img-fluid col-sm-4" th:src="@{'/photos/' + ${product.photo}}" alt="product image" />
+            <div class="col-sm-6">
+              <h3 class="card-title" th:text="${product.name}">Sony WXH-1000</h3>
+              <p class="card-text" th:text="${product.manufacturer}">Sony</p>
+              <p class="card-text" th:text="${#numbers.formatInteger(product.price,3,'POINT')} + ' VND'">10000000</p>
+              <button type="button" class="btn btn-primary" th:onclick="|window.location.href='/buy/${product.id}'|">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

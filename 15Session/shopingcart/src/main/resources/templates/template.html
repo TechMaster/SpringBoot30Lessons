@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:fragment="header(title)">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link th:rel="stylesheet" th:href="@{webjars/bootstrap/5.0.1/css/bootstrap.min.css} "/>
+  <title th:text="${title}">Document</title>
+</head>
+<body>
+  <nav th:fragment="nav(cartCount)" class="navbar navbar-expand-sm navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">shop Minh Cường</a>
+      <ul class="navbar-nav d-flex">
+        <li class="nav-item">
+          <!--<a class="nav-link" th:href="@{/checkout}" th:text="|Checkout(${cartCount})|">checkout</a>-->
+          <button type="button" class="btn btn-primary" th:onclick="window.location.href='/checkout'" th:text="|Checkout(${cartCount})|">Checkout</button>
+        </li>       
+      </ul>
+    </div>
+  </nav>
+</body>
+</html>

@@ -14,8 +14,6 @@ public class PersonRepository {
 
     private List<Person> people = new ArrayList<>();
 
-
-
     public List<Person> getAll(){
         return this.people;
     }

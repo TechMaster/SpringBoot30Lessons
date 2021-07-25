@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head th:replace="template :: header('checkout')">
+</head>
+
+<body>
+  <nav th:replace="template :: nav(${cart.orderLines.size()})"></nav>
+
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Manufacturer</th>
+          <th scope="col">Price</th>
+          <th scope="col">Count</th>
+          <th scope="col">Sub Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="orderLine, iStat:${cart.orderLines}">
+          <th scope="row" th:text="${iStat.index} +1"></th>
+          <td th:text="${orderLine.product.name}">Sony WXMH 1000</td>
+          <td th:text="${orderLine.product.manufacturer}">Sony</td>
+          <td th:text="${#numbers.formatInteger(orderLine.product.price, 3, 'POINT')}">4000000</td>
+          <td th:text="${orderLine.count}">1</td>
+          <td th:text="${#numbers.formatInteger(orderLine.product.price * orderLine.count, 3, 'POINT')}">4000000</td>
+        </tr>
+        <tr>
+          <td colspan="3"></td>
+          <td colspan="2">Raw Total</td>
+          <td th:text="${#numbers.formatInteger(cart.rawTotal, 3, 'POINT')}">4000000</td>
+        </tr>
+        <tr>
+          <td colspan="3"></td>
+          <td colspan="2">Discount</td>
+          <td th:text="${#numbers.formatInteger(-cart.discount, 3, 'POINT')}">4000000</td>
+        </tr>
+        <tr>
+          <td colspan="3"></td>
+          <td colspan="2">VAT</td>
+          <td th:text="${#numbers.formatInteger(cart.vatTax, 3, 'POINT')}">4000000</td>
+        </tr>
+        <tr>
+          <td colspan="3"></td>
+          <td colspan="2">Final Total</td>
+          <td th:text="${#numbers.formatInteger(cart.total, 3, 'POINT')}">4000000</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+</body>
+
+</html>
