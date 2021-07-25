@@ -26,12 +26,23 @@ public class HomeController {
       Cookie bgColor = CookieUtil.createCookie(
       "bgColor",    //Key
       color,        //Value
-      1,           //Số giây cho đến khi hết hạn
+      10,           //Số giây cho đến khi hết hạn
       true,        //isSecured, yêu cầu cookie gửi lên bằng HTTPS
       false,        //HttpOnly, nếu bằng true thì javascript phía client sẽ không đọc được, chỉ server đọc
       "/",          //cookie này có hiệu lực từ đường dẫn nào
       request.getServerName()); //server nào
+
+      Cookie trace = CookieUtil.createCookie(
+        "trace",    //Key
+        "ox-13",        //Value
+        10,           //Số giây cho đến khi hết hạn
+        true,        //isSecured, yêu cầu cookie gửi lên bằng HTTPS
+        false,        //HttpOnly, nếu bằng true thì javascript phía client sẽ không đọc được, chỉ server đọc
+        "/other",          //cookie này có hiệu lực từ đường dẫn nào
+        request.getServerName()); //server nào
+
       response.addCookie(bgColor);
+      response.addCookie(trace);
     } else {
       Optional<String> cookie = CookieUtil.readCookie(request, "bgColor");
       if (cookie.isPresent()) {
@@ -42,7 +53,11 @@ public class HomeController {
   }
 
   @GetMapping("/other")
-  public String otherPage() {
+  public String otherPage(HttpServletRequest request) {
+    Optional<String> cookie = CookieUtil.readCookie(request, "trace");
+    if (cookie.isPresent()) {
+      System.out.println(cookie.get());
+    }
     return "other";
   }
 }
