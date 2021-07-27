@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="template::header('Setting')">
+</head>
+<body>
+<nav th:replace="template::menu"></nav>
+<br><br>
+<div class="container-fluid">
+
+    <form th:action="@{/save}" method="post" th:object="${style}">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="background">Background Color</label>
+            <select name="background" id="background" class="form-control" th:field="*{background}">
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="gray">Gray</option>
+              <option value="orange">Orange</option>
+              <option value="maroon">Maroon</option>
+              <option value="line" selected>Linen</option>
+            </select>
+          </div>
+          <div class="col-sm-6">
+            <label for="color">Font Color</label>
+            <select name="color" id="color" class="form-control" th:field="*{color}">
+              <option value="black">Black</option>
+              <option value="white">White</option>
+              <option value="gray">Gray</option>
+              <option value="orange">Orange</option>
+              <option value="maroon" selected>Maroon</option>
+
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-group mt-5">
+        <label for="size">Font Size <span id="output"></span></label>
+        <div style="display:flex; justify-content: flex-start;align-items: center;">
+          <span class="mr-2">0.5em</span>
+          <input type="range" min="0.5" max="3.0" step="0.1" value="1" class="slider" id="myRange" th:field="*{font}">
+          <span class="ml-2">3.0em</span>
+        </div>
+
+      </div>
+      <button class="mt-3 btn" type="submit">Save Setting</button>
+    </form>
+
+</div>
+<footer th:replace="template::footer"></footer>
+<script>
+  var slider = document.getElementById("myRange");
+  slider.oninput = (()=>{
+    let value = slider.value;
+    document.getElementById("output").textContent = value;
+  })
+</script>
+</body>
+</html>

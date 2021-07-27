@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="header(title)">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title th:text="${title}"></title>
+    <style th:inline="css">
+        body {
+            background-color: linen;
+            color: maroon;
+            font-size: 0.8em;
+        }
+
+        .slider{
+            width: 200px;
+            height: 10px;
+            background-color: #d3d3d3;
+            outline: none;
+            opacity:0.7;
+        }
+        .slide:hover{
+            opacity:1;
+        }
+
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm" th:fragment="menu">
+
+    <!-- Links -->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" th:href="@{/}">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" th:href="@{/blog}">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" th:href="@{/setting}">Setting</a>
+        </li>
+    </ul>
+
+</nav>
+
+<footer th:fragment="footer">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script>
+        function getCookie(cname) {
+            let name = cname + "=";
+            let ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        let bgColor = getCookie("bgColor");
+        let color = getCookie("color");
+        let font = getCookie("font");
+        if (bgColor != "" && color!="" && font!="") {
+            console.log(bgColor,color,font);
+            $("body").css({
+                background: bgColor,
+                color:color,
+                fontSize: font + 'em'
+            })
+            $("a").css({
+                color:color,
+                textDecoration:"none"
+            })
+            $(".btn").css({
+                color:color,
+                background: bgColor,
+                fontSize: font + 'em'
+            })
+        }
+
+
+
+    </script>
+</footer>
+</body>
+</html>

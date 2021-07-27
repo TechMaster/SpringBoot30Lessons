@@ -1,7 +1,6 @@
 1. Cấu trúc chương trình
- ![img.png](img.png)
+ ![img_8.png](img_8.png)
    
-![img_4.png](img_4.png)
 2. Chạy chương trình:
     Hompage:
         ![img_1.png](img_1.png)
