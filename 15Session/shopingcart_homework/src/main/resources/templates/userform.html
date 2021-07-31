@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="template :: header('User Infor')">
+</head>
+<body>
+  <nav th:replace="template :: nav(${cartCount})"></nav>
+  <div class="container">
+    <h3>User Information</h3>
+    <form th:action="@{/confirm}" method="post" th:object="${user}">
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" th:field="*{name}" >
+        <div class="text-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}" >Name Error</div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your email</label>
+        <input type="email" class="form-control" id="email" th:field="*{email}">
+        <div class="text-danger" th:if="${#fields.hasErrors('email')}" th:errors="*{email}" >Email Error</div>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Your mobile</label>
+        <input type="text" class="form-control" id="phone" th:field="*{phone}">
+        <div class="text-danger" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}" >Phone Error</div>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Your address</label>
+        <textarea class="form-control" id="address" th:field="*{address}"></textarea>
+        <div class="text-danger" th:if="${#fields.hasErrors('address')}" th:errors="*{address}" >Address Error</div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Order Confirm</button>
+    </form>
+  </div>
+</body>
+</html>

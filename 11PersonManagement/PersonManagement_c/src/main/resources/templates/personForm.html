@@ -9,16 +9,18 @@
         <div class="col-lg-8 mt-5">
             <form th:action="@{/post}" method="post" name="person"
                   enctype="multipart/form-data" th:object="${person}">
-                <input type="hidden" placeholder="id" th:field="*{id}"/><br><br>
+                <input type="hidden" placeholder="id" th:field="*{id}" /><br><br>
                 <div class="form-group row">
                     <label for="fullname" class="col-sm-4 col-form-label" th:text="#{name}">Full Name</label>
                     <div class="col-sm-8">
-                        <input type="text" name="fullname" id="fullname" th:field="*{name}">
+                        <input type="text" name="fullname" id="fullname" th:field="*{name}" th:placeholder="#{testing}"/>
+
                     </div>
                     <div class="text-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</div>
                 </div>
                 <div class="form-group row mt-3">
                     <label for="job" class="col-sm-4 col-form-label" th:text="#{job}">Job</label>
+                    <input type="text" placeholder="testing">
                     <div class="col-sm-8">
                         <select name="job" id="job" th:field="*{job}">
                             <option value="Developer">Developer</option>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+
+<head th:replace="template :: header('checkout')">
+</head>
+
+<body>
+  <nav th:replace="template :: nav(${cartCount})"></nav>
+
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Manufacturer</th>
+          <th scope="col">Price</th>
+          <th scope="col">Count</th>
+          <th scope="col">Sub Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="orderLine, iStat:${cart.orderLines}">
+          <th scope="row" th:text="${iStat.index} +1"></th>
+          <td th:text="${orderLine.product.name}"></td>
+          <td th:text="${orderLine.product.manufacturer}"></td>
+          <td th:text="${#numbers.formatInteger(orderLine.product.price, 3, 'POINT')}"></td>
+          <td>
+            <span th:text="${orderLine.count}"></span> &nbsp;
+            <span>
+              <button type="button" class="btn-sm btn-primary" th:onclick="|window.location.href='/add/${orderLine.product.id}'|">+</button>
+            </span> &nbsp;
+            <span>
+              <button type="button" class="btn-sm btn-primary"
+                      th:if="${orderLine.count > 1}"
+                      th:onclick="|window.location.href='/remove/${orderLine.product.id}'|">-</button>
+            </span>
+          </td>
+          <td>
+            <span th:text="${#numbers.formatInteger(orderLine.product.price * orderLine.count, 3, 'POINT')}"></span>
+            &nbsp;
+            <span>
+              <button type="button" class="btn-sm btn-primary" th:onclick="|window.location.href='/delete/${orderLine.product.id}'|">
+                Delete
+              </button>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3"></td>
+          <td colspan="2">Raw Total</td>
+          <td th:text="${#numbers.formatInteger(cart.rawTotal, 3, 'POINT')}"></td>
+        </tr>
+        <tr>
+          <td colspan="3"></td>
+          <td colspan="2">Discount</td>
+          <td th:text="${#numbers.formatInteger(-cart.discount, 3, 'POINT')}"></td>
+        </tr>
+        <tr>
+          <td colspan="3"></td>
+          <td colspan="2">VAT</td>
+          <td th:text="${#numbers.formatInteger(cart.vatTax, 3, 'POINT')}"></td>
+        </tr>
+        <tr>
+          <td colspan="3"></td>
+          <td colspan="2">Final Total</td>
+          <td th:text="${#numbers.formatInteger(cart.total, 3, 'POINT')}"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <a th:href="@{/userForm}" th:if="${cartCount}>0">Click to user infor</a>
+    </div>
+  </div>
+
+</body>
+
+</html>

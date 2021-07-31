@@ -19,6 +19,7 @@ public class DBMessageSource implements MessageSource {
         localizeDB.put("job.cannot.null", new LocalizeString("job can not be null", "Công việc không để trống"));
         localizeDB.put("birthDay.cannot.null", new LocalizeString("BirtDay can not be null", "Hãy chọn ngày sinh"));
 
+        localizeDB.put("testing", new LocalizeString("Testing", "Thử nghiệm"));
 
         localizeDB.put("home", new LocalizeString("home", "Trang chính"));
         localizeDB.put("list_people", new LocalizeString("List People", "Danh sách người"));
