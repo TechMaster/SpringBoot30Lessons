@@ -19,13 +19,13 @@ public class ProductRepository {
     initData();
   }
 
-  @Cacheable("books")
+  @Cacheable("products")
   public List<Product> getAll() {
     simulateSlowService();
     return products;
   }
 
-  @Cacheable(value = "book", key="#id")
+  @Cacheable(value = "product", key="#id")
   public Optional<Product> findById(long id) {
     simulateSlowService();
     return products.stream().filter(p -> p.getId() == id).findFirst();
