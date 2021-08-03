@@ -1,9 +1,8 @@
 package vn.techmaster.shopingcart.service;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Optional;
-import java.util.Collections;
+
 
 import javax.servlet.http.HttpSession;
 
@@ -50,7 +49,6 @@ public class CartService {
 
     cart = (HashMap<Long, OrderLine>) rawCart;
 
-    Optional<Product> product = productRepository.findById(id);
     OrderLine orderLine = cart.get(id);
     orderLine.decreaseByOne();
     cart.put(id,orderLine);

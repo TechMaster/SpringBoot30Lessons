@@ -14,14 +14,10 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import org.springframework.web.bind.annotation.PostMapping;
-import vn.techmaster.shopingcart.model.Cart;
-import vn.techmaster.shopingcart.model.OrderLine;
 import vn.techmaster.shopingcart.model.User;
 import vn.techmaster.shopingcart.repository.ProductRepository;
 import vn.techmaster.shopingcart.service.CartService;
-import vn.techmaster.shopingcart.util.MailConstructor;
-
-import java.util.Locale;
+import vn.techmaster.shopingcart.service.MailConstructor;
 
 @Controller
 public class ProductController {
@@ -84,7 +80,7 @@ public class ProductController {
   public String confirm(@Valid @ModelAttribute("user") User user, BindingResult result,
                         Model model, HttpSession session, HttpServletRequest request){
     if(!result.hasErrors()){
-      mailSender.send(mailConstructor.constructOrderConfirmationEmail(user, cartService.getCart(session), Locale.ENGLISH));
+      mailSender.send(mailConstructor.constructOrderConfirmationEmail(user, cartService.getCart(session)));
       model.addAttribute("products", productRepository.getAll());
       model.addAttribute("cartCount",0);
       request.getSession().invalidate();

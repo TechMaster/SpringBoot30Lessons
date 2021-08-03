@@ -1,7 +1,6 @@
 package vn.techmaster.shopingcart.model;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import lombok.Data;
@@ -25,9 +24,9 @@ public class Cart {
     this.orderLines = orderLines;
     rawTotal = 0;
 
-    orderLines.stream().forEach(orderLine -> {
-      rawTotal += orderLine.getCount() * orderLine.getProduct().getPrice();
-    });
+    orderLines.stream().forEach(orderLine -> 
+      rawTotal += orderLine.getCount() * orderLine.getProduct().getPrice()
+    );
 
     discount = (long) Math.round(rawTotal * discountPercentage);
     
