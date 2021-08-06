@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+        "name":"Acer Aspire",     
+        "price": 86,
+        "description":"A new sense",
+        "id":1
+    },
+    {
+        "name":"Booror Moon",   
+        "price": 90,
+        "description":"A new sense",
+        "id":2
+    },
+    {
+        "name":"Rocker Stone",
+        "price": 96,
+        "description":"A new sense",
+        "id":3
+    },
+    {
+        "name":"Dark Knight",
+        "price": 105,
+        "description":"A new sense",
+        "id":4
+    },
+    {
+        "name":"Glow Dim",
+        "price": 80,
+        "description":"A new sense",
+        "id":5
+    },
+    {
+        "name":"Flash Tider",
+        "price": 100,
+        "description":"A new sense",
+        "id":6
+    }
+]
+}
