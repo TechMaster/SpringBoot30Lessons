@@ -111,3 +111,11 @@
 [INFO ] 2021-07-19 22:47:21.463 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 4.441 seconds (JVM running for 5.61)
 [ERROR] 2021-07-19 22:53:47.730 [http-nio-8080-exec-6] CustomExceptionHandler - Binding Exception
 [ERROR] 2021-07-19 22:56:04.436 [http-nio-8080-exec-8] CustomExceptionHandler - RESTException : Failed to store file src/main/resources/static/photos/1_springcloud.jpg
+[INFO ] 2021-08-03 19:50:30.526 [restartedMain] SimpleuploadApplication - Starting SimpleuploadApplication using Java 16.0.1 on QuangMinh with PID 2080 (F:\Techmaster training\SpringBoot30Lessons\10FileUpload\UploadPhotoToREST\simpleupload\target\classes started by Dell in F:\Techmaster training\SpringBoot30Lessons\10FileUpload\UploadPhotoToREST\simpleupload)
+[DEBUG] 2021-08-03 19:50:30.558 [restartedMain] SimpleuploadApplication - Running with Spring Boot v2.4.5, Spring v5.3.6
+[INFO ] 2021-08-03 19:50:30.561 [restartedMain] SimpleuploadApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-08-03 19:50:36.023 [restartedMain] SimpleuploadApplication - Started SimpleuploadApplication in 6.41 seconds (JVM running for 16.175)
+[ERROR] 2021-08-03 19:55:16.358 [http-nio-8088-exec-1] CustomExceptionHandler - RESTException : You must select the a file for uploading
+[ERROR] 2021-08-03 19:56:24.766 [http-nio-8088-exec-3] CustomExceptionHandler - RESTException : Failed to store file src/main/resources/static/photos/1_3.png
+[ERROR] 2021-08-03 20:00:23.729 [http-nio-8088-exec-6] CustomExceptionHandler - RESTException : Failed to store file src/main/resources/static/photos/2_3.png
+[ERROR] 2021-08-03 20:01:19.154 [http-nio-8088-exec-8] CustomExceptionHandler - RESTException : Failed to store file src/main/resources/static/photos/3_20.jpg

@@ -564,3 +564,52 @@ Field error in object 'photoRequest' on field 'description': rejected value [d];
 [DEBUG] 2021-07-19 22:57:06.515 [http-nio-8080-exec-1] DispatcherServlet - GET "/photos/2_springcloud.jpg", parameters={}
 [DEBUG] 2021-07-19 22:57:06.516 [http-nio-8080-exec-1] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
 [DEBUG] 2021-07-19 22:57:06.521 [http-nio-8080-exec-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-08-03 19:50:35.647 [restartedMain] RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2021-08-03 19:50:35.728 [restartedMain] RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2021-08-03 19:50:35.775 [restartedMain] SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+[DEBUG] 2021-08-03 19:50:35.791 [restartedMain] ExceptionHandlerExceptionResolver - ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+[INFO ] 2021-08-03 19:55:16.230 [http-nio-8088-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-08-03 19:55:16.230 [http-nio-8088-exec-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-08-03 19:55:16.231 [http-nio-8088-exec-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-08-03 19:55:16.231 [http-nio-8088-exec-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-08-03 19:55:16.232 [http-nio-8088-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3450c182
+[DEBUG] 2021-08-03 19:55:16.233 [http-nio-8088-exec-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3102f7e
+[DEBUG] 2021-08-03 19:55:16.233 [http-nio-8088-exec-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-08-03 19:55:16.234 [http-nio-8088-exec-1] DispatcherServlet - Completed initialization in 4 ms
+[DEBUG] 2021-08-03 19:55:16.249 [http-nio-8088-exec-1] DispatcherServlet - POST "/upload", parameters={}
+[DEBUG] 2021-08-03 19:55:16.255 [http-nio-8088-exec-1] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-08-03 19:55:16.355 [http-nio-8088-exec-1] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleBookStoreException(RESTException, WebRequest)
+[DEBUG] 2021-08-03 19:55:16.435 [http-nio-8088-exec-1] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-08-03 19:55:16.438 [http-nio-8088-exec-1] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@6163b92b]
+[WARN ] 2021-08-03 19:55:16.485 [http-nio-8088-exec-1] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.simpleupload.exception.RESTException: You must select the a file for uploading]
+[DEBUG] 2021-08-03 19:55:16.486 [http-nio-8088-exec-1] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-08-03 19:56:24.570 [http-nio-8088-exec-3] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-08-03 19:56:24.579 [http-nio-8088-exec-3] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-08-03 19:56:24.765 [http-nio-8088-exec-3] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleBookStoreException(RESTException, WebRequest)
+[DEBUG] 2021-08-03 19:56:24.767 [http-nio-8088-exec-3] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-08-03 19:56:24.768 [http-nio-8088-exec-3] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@1e6c535c]
+[WARN ] 2021-08-03 19:56:24.774 [http-nio-8088-exec-3] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.simpleupload.exception.RESTException: Failed to store file src/main/resources/static/photos/1_3.png]
+[DEBUG] 2021-08-03 19:56:24.776 [http-nio-8088-exec-3] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-08-03 20:00:23.720 [http-nio-8088-exec-6] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-08-03 20:00:23.722 [http-nio-8088-exec-6] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-08-03 20:00:23.729 [http-nio-8088-exec-6] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleBookStoreException(RESTException, WebRequest)
+[DEBUG] 2021-08-03 20:00:23.730 [http-nio-8088-exec-6] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-08-03 20:00:23.731 [http-nio-8088-exec-6] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@28056db6]
+[WARN ] 2021-08-03 20:00:23.732 [http-nio-8088-exec-6] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.simpleupload.exception.RESTException: Failed to store file src/main/resources/static/photos/2_3.png]
+[DEBUG] 2021-08-03 20:00:23.734 [http-nio-8088-exec-6] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-08-03 20:01:19.146 [http-nio-8088-exec-8] DispatcherServlet - POST "/upload", parameters={masked}
+[DEBUG] 2021-08-03 20:01:19.147 [http-nio-8088-exec-8] RequestMappingHandlerMapping - Mapped to vn.techmaster.simpleupload.controller.UploadController#upload(PhotoRequest, HttpServletRequest)
+[DEBUG] 2021-08-03 20:01:19.153 [http-nio-8088-exec-8] ExceptionHandlerExceptionResolver - Using @ExceptionHandler vn.techmaster.simpleupload.controller.CustomExceptionHandler#handleBookStoreException(RESTException, WebRequest)
+[DEBUG] 2021-08-03 20:01:19.155 [http-nio-8088-exec-8] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-08-03 20:01:19.156 [http-nio-8088-exec-8] HttpEntityMethodProcessor - Writing [vn.techmaster.simpleupload.controller.APIError@59a101fa]
+[WARN ] 2021-08-03 20:01:19.157 [http-nio-8088-exec-8] ExceptionHandlerExceptionResolver - Resolved [vn.techmaster.simpleupload.exception.RESTException: Failed to store file src/main/resources/static/photos/3_20.jpg]
+[DEBUG] 2021-08-03 20:01:19.159 [http-nio-8088-exec-8] DispatcherServlet - Completed 400 BAD_REQUEST
+[DEBUG] 2021-08-03 20:01:25.747 [http-nio-8088-exec-10] DispatcherServlet - GET "/main/resources/static/photos/3_20.jpg", parameters={}
+[DEBUG] 2021-08-03 20:01:25.752 [http-nio-8088-exec-10] SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+[DEBUG] 2021-08-03 20:01:25.757 [http-nio-8088-exec-10] ResourceHttpRequestHandler - Resource not found
+[DEBUG] 2021-08-03 20:01:25.758 [http-nio-8088-exec-10] DispatcherServlet - Completed 404 NOT_FOUND
+[DEBUG] 2021-08-03 20:01:25.766 [http-nio-8088-exec-10] DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+[DEBUG] 2021-08-03 20:01:25.769 [http-nio-8088-exec-10] RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+[DEBUG] 2021-08-03 20:01:25.803 [http-nio-8088-exec-10] HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-08-03 20:01:25.804 [http-nio-8088-exec-10] HttpEntityMethodProcessor - Writing [{timestamp=Tue Aug 03 20:01:25 ICT 2021, status=404, error=Not Found, message=No message available,  (truncated)...]
+[DEBUG] 2021-08-03 20:01:25.821 [http-nio-8088-exec-10] DispatcherServlet - Exiting from "ERROR" dispatch, status 404
