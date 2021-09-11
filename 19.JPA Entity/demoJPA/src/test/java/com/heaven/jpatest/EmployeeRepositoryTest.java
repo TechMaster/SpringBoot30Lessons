@@ -32,8 +32,9 @@ public class EmployeeRepositoryTest {
                 .firstName("Quang").lastName("Minh").email("quang@yahoo.com")
                 .build();
         employeeRepository.save(employee);
-
-        Assertions.assertThat(employee.getId()).isGreaterThan(0);
+        Employee saveEmployee = employeeRepository.findById(1L).get();
+        System.out.println(employeeRepository.findById(1L).get());
+        Assertions.assertThat(saveEmployee.getFirstName()).isEqualTo("Quang");
     }
     @Test
     @Order(2)
