@@ -30,6 +30,7 @@ public class Author {
 
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "author",orphanRemoval = true)
     private List<Book> books = new ArrayList<>();
+
     public void addBook(Book book){
         this.books.add(book);
         book.setAuthor(this);
