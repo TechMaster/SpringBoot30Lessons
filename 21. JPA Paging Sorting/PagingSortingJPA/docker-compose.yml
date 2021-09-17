@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql
+    environment:
+        - MYSQL_ROOT_PASSWORD=quang
+        - MYSQL_USER=quang
+        - MYSQL_PASSWORD=quang
+        - MYSQL_DATABASE=salesdb
+    volumes:
+        - var/lib/mysql
+        - ./salesdb.sql:/docker-entrypoint-initdb.d/init.sql
+
+
+  web:
+    image: spring-app:latest
+    ports:
+      - "8005:8080"
+    depends_on:
+      - mysql
+
+
+
+
+
