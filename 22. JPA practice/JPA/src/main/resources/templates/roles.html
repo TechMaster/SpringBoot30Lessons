@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Roles</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center">User Role List</h1>
+    <div>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th></th>
+            </tr>
+
+            </thead>
+            <tbody>
+            <tr th:object="${user}">
+                <td th:text="*{fullname}"></td>
+                <td th:text="*{email}"></td>
+                <td>
+                    <span th:each="role:${user.roles}" th:text="${role.name} + ' '"></span>
+                </td>
+                <td>
+                    <a th:href="@{'/roles/edit/' + ${user.id}}">Edit</a>
+                    &nbsp;
+                    <a th:href="@{'/roles/delete/' + ${user.id}}">Delete</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+</body>
+</html>

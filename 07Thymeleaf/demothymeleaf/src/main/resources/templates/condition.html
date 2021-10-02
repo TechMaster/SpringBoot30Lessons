@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head th:replace="template.html :: header('condition')">
 </head>
 <body>  
@@ -17,9 +18,9 @@
     <tbody>
       <tr th:each="person, iStat:${people}" th:classappend="${person.gender=='male'} ? table-primary : table-warning">
         <th scope="row" th:text="${iStat.index} +1"></th>
-        <td th:text="${person.name}">Long</td>
-        <td th:text="${person.nationality}">Vietnam</td>
-        <td th:text="${person.birthdate}">1979-11-05</td>
+        <td th:text="${person.name}"></td>
+        <td th:text="${person.nationality}"></td>
+        <td th:text="${person.birthdate}"></td>
         <td th:text="${person.gender}"></td>
         <td>
           <span th:if="${person.gender == 'female'}">🙎🏻‍♀️</span>

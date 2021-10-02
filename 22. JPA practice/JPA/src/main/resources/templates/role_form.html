@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User Role</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center">Update Role</h1>
+    <form th:action="@{/updateRole}" th:object="${user}" method="post" class="mx-auto">
+        <input type="hidden" th:field="*{id}" th:value="${user.id}">
+        <div class="form-group row">
+            <div class="col-4 text-right">
+                <label class="col-form-label">FullName:</label>
+            </div>
+            <div class="col-8 text-left">
+                <input type="text" class="form-control" th:field="*{fullname}" readonly>
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <div class="col-4 text-right">Roles</div>
+            <div class="col-8 text-left">
+                <label class="checkbox-inline px-2" th:each="role:${allRoles}">
+                    <input type="checkbox" th:text="${role.name}" th:value="${role.id}" th:field="*{roles}" class="px-1">
+                </label>
+            </div>
+
+        </div>
+
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

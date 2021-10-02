@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Form</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Create New Account</h1>
+        <form th:action="@{/account/save}" th:object="${account}" method="post" class="mx-auto">
+            <div class="form-group row">
+                <div class="col-4 text-right">
+                    <label class="col-form-label">FullName:</label>
+                </div>
+                <div class="col-8 text-left">
+                    <input type="text" th:field="*{fullname}" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4 text-right">
+                    <label class="col-form-label">Email:</label>
+                </div>
+                <div class="col-8 text-left">
+                    <input type="email" th:field="*{email}" class="form-control" required name="email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4 text-right">
+                    <label class="col-form-label">Password:</label>
+                </div>
+                <div class="col-8 text-left">
+                    <input type="password"  class="form-control" name="password" required>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

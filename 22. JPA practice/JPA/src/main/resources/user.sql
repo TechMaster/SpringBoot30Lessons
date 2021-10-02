@@ -1,0 +1,10 @@
+insert into user (fullname, password, email) values ('admin', '$2a$12$Ass3YFsOBQ.36vmAqUsGPucTiSQC35mKqiYb2ibg3yHHLxj.rJP2q', 'admin@techmaster.vn');
+insert into user (fullname, password, email) values ('John Stone', '$2a$12$vJeUrBD51Nax5fxwSHjgzuMImRC/EAtafsIb0hJ2fts3GnkDldgQ.', 'john@st.mail');
+insert into user (fullname, password, email) values ('Fred Guy', '$2a$12$RWgTCBR0mo1pwHRD5xh8K.n/VXm7ol/sOK0y6F/zp0Xwy.JP7Gd7q', 'fred@to.com');
+insert into user (fullname, password, email) values ('Quang Minh', '$2a$12$xGDj4iVNKMZdHJxfQOs5dO.swIGXRSV9BSodkasa60B4ks6CKjsQW', 'quangminh@vn.com');
+insert into user (fullname, password, email) values ('Cuong Trinh', '$2a$12$ERgVfGNpqrDKF/5HU8i5CunFGVUYjS2WVuf7JMv6qW3eLv5quoDva', 'cuong@techmaster.vn');
+insert into user (fullname, password, email) values ('Philip Lamn', '$2a$12$YmiUxpuvzhRR2hnWNyZI5utkTg/vrWsv1msPeF9nUyEFAUeZYueke', 'philip@de.com');
+insert into user (fullname, password, email) values ('Mendy Shaw', '$2a$12$hWUDk2GX/qYeUqydPovh4.yGMTK7bM1yVeWwVEdtiSdVpJv3s9UDy', 'mendy@yahoo.com');
+insert into user (fullname, password, email) values ('Ha Manh', '$2a$12$WUhLGvON2Gz8rnzhLCgnkOZccTRlwtmoxXecYRGoAu3CK0FjXjJ2.', 'hmanh@java.com');
+insert into user (fullname, password, email) values ('Thang Tran', '$2a$12$5TT1FZ7Qr7xC5RI/eUlWG.DjmK/mya5wfA4Mp.bQ46LXtJyTZ/YP.', 'tthang@learn.com');
+insert into user (fullname, password, email) values ('Nguyen Duy', '$2a$12$XUvo9HBqcvjADBm5bT8qye7Qt1/SVkuk3LmKJx2mRaDWq3BO56KvW', 'duynguyen@hut.edu');

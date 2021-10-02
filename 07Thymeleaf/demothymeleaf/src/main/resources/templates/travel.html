@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 
 <head>
   <meta charset="UTF-8">
@@ -9,9 +10,9 @@
 </head>
 
 <body>
-  <form action="#" th:action="@{/travel}" th:object="${travelRequest}" method="post">
+  <form th:action="@{/travel}" th:object="${travelRequest}" method="post">
   <label for="countries">Nationality</label>
-  <select name="nationality" id="nationality">
+  <select th:field="*{nationality}" id="nationality">
     <option 
     th:each="country:${countries}" 
     th:text="${country.name}" 

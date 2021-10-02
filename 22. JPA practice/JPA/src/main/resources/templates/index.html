@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">LOGIN</h1>
+        <ul class="nav">
+            <li class="nav-item">
+                <a th:href="@{/account}" class="nav-link">Create Account</a>
+            </li>
+            <li class="nav-item">
+                <a th:href="@{/password}" class ="nav-link">Retrieve Password</a>
+            </li>
+        </ul>
+        <form th:action="@{/info}" th:object="${loginRequest}" method="post" class ="mx-auto">
+            <div class="form-group row">
+                <div class="col-4 text-right">
+                    <label class="col-form-label">User Email:</label>
+                </div>
+                <div class="col-8 text-left">
+                    <input type="email" th:field="*{email}" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4 text-right">
+                    <label class="col-form-label">User Password:</label>
+                </div>
+                <div class="col-8 text-left">
+                    <input type="password" th:field="*{password}" class="form-control" required>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
