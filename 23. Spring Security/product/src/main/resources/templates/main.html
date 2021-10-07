@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+ <h2 th:text="'Hello,' + ${username} + '!'"></h2>
+ <p><a href="/logout">Sign out here</a></p>
+<h2>There are products:</h2>
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Price</th>
+    </thead>
+    <tbody>
+        <tr th:if="${products.isEmpty()}">
+            <td colspan="2"> No Products Avaiable</td>
+        </tr>
+        <tr th:each="book:${products}">
+            <td><span th:text="${book.name}"></span></td>
+            <td><span th:text="${book.price}"></span></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
