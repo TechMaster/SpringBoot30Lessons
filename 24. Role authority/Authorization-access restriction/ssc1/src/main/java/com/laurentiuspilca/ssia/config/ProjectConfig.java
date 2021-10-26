@@ -44,7 +44,7 @@ public class ProjectConfig extends WebSecurityConfigurerAdapter {
         http.httpBasic();
 
 //        http.authorizeRequests().anyRequest().hasAnyAuthority("WRITE", "READ");
-//        http.authorizeRequests().anyRequest().hasAuthority("WRITE");
-        http.authorizeRequests().anyRequest().access("hasAuthority('WRITE')");
+        http.authorizeRequests().anyRequest().hasAuthority("WRITE");
+//        http.authorizeRequests().anyRequest().access("hasAuthority('WRITE')");
     }
 }

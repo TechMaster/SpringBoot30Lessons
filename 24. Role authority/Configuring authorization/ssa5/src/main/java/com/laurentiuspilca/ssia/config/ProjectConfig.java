@@ -49,3 +49,4 @@ public class ProjectConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers( "/hello").authenticated();
     }
 }
+
